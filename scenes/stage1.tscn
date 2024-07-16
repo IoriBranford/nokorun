@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cda0kpiaelr3k"]
+[gd_scene load_steps=10 format=3 uid="uid://cda0kpiaelr3k"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_mkuuj"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_twbrf"]
@@ -7,6 +7,9 @@
 [ext_resource type="Script" path="res://scripts/hud.gd" id="11_m1l17"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="12_wrh1s"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="13_n3ria"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fospa"]
+size = Vector3(1, 5, 200)
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("13_n3ria")
@@ -425,6 +428,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 186)
 
 [node name="platform-medium64" parent="World/LeftLane" instance=ExtResource("5_ox6pq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 189)
+
+[node name="LeftWall" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2.5, 100)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/LeftWall"]
+shape = SubResource("BoxShape3D_fospa")
+
+[node name="RightWall" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2.5, 100)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/RightWall"]
+shape = SubResource("BoxShape3D_fospa")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
