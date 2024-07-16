@@ -24,10 +24,10 @@ view = NodePath("../View")
 autorun = true
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
-transform = Transform3D(-1, -2.26267e-08, 8.44439e-08, 0, 0.965926, 0.258819, -8.74228e-08, 0.258819, -0.965926, 0, 0, 5)
+transform = Transform3D(-1, -2.26267e-08, 8.44439e-08, 0, 0.965926, 0.258819, -8.74228e-08, 0.258819, -0.965926, 0, 0, 6)
 script = ExtResource("3_forxf")
 target = NodePath("../Player")
-target_offset = Vector3(0, 0, 5)
+target_offset = Vector3(0, 0, 6)
 zoom_input_enabled = false
 rotation_input_enabled = false
 
