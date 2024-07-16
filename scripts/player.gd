@@ -8,6 +8,7 @@ signal coin_collected
 @export_subgroup("Properties")
 @export var movement_speed = 250
 @export var jump_strength = 7
+@export var autorun = false
 
 var movement_velocity: Vector3
 var rotation_direction: float
@@ -96,7 +97,7 @@ func handle_controls(delta):
 	var input := Vector3.ZERO
 	
 	input.x = Input.get_axis("move_left", "move_right")
-	input.z = Input.get_axis("move_forward", "move_back")
+	input.z = -1.0 if autorun else Input.get_axis("move_forward", "move_back")
 	
 	input = input.rotated(Vector3.UP, view.rotation.y).normalized()
 	
