@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dl2ed4gkybggf"]
+[gd_scene load_steps=12 format=3 uid="uid://dl2ed4gkybggf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ffboj"]
 [ext_resource type="PackedScene" uid="uid://c0e27836xgmhi" path="res://objects/character.tscn" id="2_nero3"]
@@ -23,11 +23,16 @@ proximity_fade_distance = 0.25
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.249284, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_t8naq"]
-size = Vector3(1, 0.5, 0.5)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fqqe8"]
+radius = 0.25
+height = 1.0
 
 [sub_resource type="PrismMesh" id="PrismMesh_tfg7s"]
 size = Vector3(0.5, 1, 0.5)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_udxjm"]
+radius = 0.25
+height = 1.0
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -84,7 +89,8 @@ autoplay = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AntlerRight"]
-shape = SubResource("BoxShape3D_t8naq")
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_fqqe8")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="AntlerRight"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
@@ -94,7 +100,8 @@ mesh = SubResource("PrismMesh_tfg7s")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AntlerLeft"]
-shape = SubResource("BoxShape3D_t8naq")
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_udxjm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="AntlerLeft"]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 0, 0, 0)
