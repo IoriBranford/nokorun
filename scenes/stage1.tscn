@@ -4,12 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_twbrf"]
 [ext_resource type="Script" path="res://scripts/view.gd" id="3_forxf"]
 [ext_resource type="PackedScene" uid="uid://rjh4ifidqrfp" path="res://objects/platform_medium.tscn" id="5_ox6pq"]
+[ext_resource type="PackedScene" uid="uid://bqwg6lmm30168" path="res://objects/boundary_medium.tscn" id="5_uit6i"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="11_m1l17"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="12_wrh1s"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="13_n3ria"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_fospa"]
-size = Vector3(1, 5, 200)
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("13_n3ria")
@@ -429,17 +427,393 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 186)
 [node name="platform-medium64" parent="World/LeftLane" instance=ExtResource("5_ox6pq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 189)
 
-[node name="LeftWall" type="StaticBody3D" parent="World"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2.5, 100)
+[node name="LeftWall" type="Node3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/LeftWall"]
-shape = SubResource("BoxShape3D_fospa")
+[node name="boundary-medium" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
 
-[node name="RightWall" type="StaticBody3D" parent="World"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2.5, 100)
+[node name="boundary-medium2" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="World/RightWall"]
-shape = SubResource("BoxShape3D_fospa")
+[node name="boundary-medium3" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="boundary-medium4" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+
+[node name="boundary-medium5" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="boundary-medium6" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="boundary-medium7" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+
+[node name="boundary-medium8" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21)
+
+[node name="boundary-medium9" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+
+[node name="boundary-medium10" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 27)
+
+[node name="boundary-medium11" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+
+[node name="boundary-medium12" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 33)
+
+[node name="boundary-medium13" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36)
+
+[node name="boundary-medium14" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39)
+
+[node name="boundary-medium15" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 42)
+
+[node name="boundary-medium16" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 45)
+
+[node name="boundary-medium17" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48)
+
+[node name="boundary-medium18" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 51)
+
+[node name="boundary-medium19" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54)
+
+[node name="boundary-medium20" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 57)
+
+[node name="boundary-medium21" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60)
+
+[node name="boundary-medium22" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 63)
+
+[node name="boundary-medium23" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 66)
+
+[node name="boundary-medium24" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 69)
+
+[node name="boundary-medium25" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 72)
+
+[node name="boundary-medium26" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 75)
+
+[node name="boundary-medium27" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 78)
+
+[node name="boundary-medium28" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 81)
+
+[node name="boundary-medium29" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 84)
+
+[node name="boundary-medium30" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 87)
+
+[node name="boundary-medium31" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 90)
+
+[node name="boundary-medium32" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 93)
+
+[node name="boundary-medium33" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 96)
+
+[node name="boundary-medium34" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 99)
+
+[node name="boundary-medium35" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 102)
+
+[node name="boundary-medium36" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 105)
+
+[node name="boundary-medium37" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 108)
+
+[node name="boundary-medium38" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 111)
+
+[node name="boundary-medium39" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 114)
+
+[node name="boundary-medium40" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 117)
+
+[node name="boundary-medium41" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 120)
+
+[node name="boundary-medium42" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 123)
+
+[node name="boundary-medium43" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 126)
+
+[node name="boundary-medium44" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 129)
+
+[node name="boundary-medium45" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 132)
+
+[node name="boundary-medium46" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 135)
+
+[node name="boundary-medium47" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 138)
+
+[node name="boundary-medium48" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 141)
+
+[node name="boundary-medium49" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 144)
+
+[node name="boundary-medium50" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 147)
+
+[node name="boundary-medium51" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 150)
+
+[node name="boundary-medium52" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 153)
+
+[node name="boundary-medium53" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 156)
+
+[node name="boundary-medium54" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 159)
+
+[node name="boundary-medium55" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 162)
+
+[node name="boundary-medium56" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 165)
+
+[node name="boundary-medium57" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 168)
+
+[node name="boundary-medium58" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 171)
+
+[node name="boundary-medium59" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 174)
+
+[node name="boundary-medium60" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 177)
+
+[node name="boundary-medium61" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 180)
+
+[node name="boundary-medium62" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 183)
+
+[node name="boundary-medium63" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 186)
+
+[node name="boundary-medium64" parent="World/LeftWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 189)
+
+[node name="RightWall" type="Node3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, 0)
+
+[node name="boundary-medium" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+
+[node name="boundary-medium2" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="boundary-medium3" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="boundary-medium4" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+
+[node name="boundary-medium5" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="boundary-medium6" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="boundary-medium7" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+
+[node name="boundary-medium8" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21)
+
+[node name="boundary-medium9" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+
+[node name="boundary-medium10" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 27)
+
+[node name="boundary-medium11" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+
+[node name="boundary-medium12" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 33)
+
+[node name="boundary-medium13" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 36)
+
+[node name="boundary-medium14" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39)
+
+[node name="boundary-medium15" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 42)
+
+[node name="boundary-medium16" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 45)
+
+[node name="boundary-medium17" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48)
+
+[node name="boundary-medium18" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 51)
+
+[node name="boundary-medium19" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54)
+
+[node name="boundary-medium20" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 57)
+
+[node name="boundary-medium21" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60)
+
+[node name="boundary-medium22" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 63)
+
+[node name="boundary-medium23" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 66)
+
+[node name="boundary-medium24" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 69)
+
+[node name="boundary-medium25" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 72)
+
+[node name="boundary-medium26" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 75)
+
+[node name="boundary-medium27" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 78)
+
+[node name="boundary-medium28" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 81)
+
+[node name="boundary-medium29" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 84)
+
+[node name="boundary-medium30" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 87)
+
+[node name="boundary-medium31" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 90)
+
+[node name="boundary-medium32" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 93)
+
+[node name="boundary-medium33" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 96)
+
+[node name="boundary-medium34" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 99)
+
+[node name="boundary-medium35" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 102)
+
+[node name="boundary-medium36" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 105)
+
+[node name="boundary-medium37" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 108)
+
+[node name="boundary-medium38" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 111)
+
+[node name="boundary-medium39" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 114)
+
+[node name="boundary-medium40" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 117)
+
+[node name="boundary-medium41" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 120)
+
+[node name="boundary-medium42" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 123)
+
+[node name="boundary-medium43" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 126)
+
+[node name="boundary-medium44" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 129)
+
+[node name="boundary-medium45" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 132)
+
+[node name="boundary-medium46" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 135)
+
+[node name="boundary-medium47" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 138)
+
+[node name="boundary-medium48" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 141)
+
+[node name="boundary-medium49" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 144)
+
+[node name="boundary-medium50" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 147)
+
+[node name="boundary-medium51" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 150)
+
+[node name="boundary-medium52" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 153)
+
+[node name="boundary-medium53" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 156)
+
+[node name="boundary-medium54" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 159)
+
+[node name="boundary-medium55" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 162)
+
+[node name="boundary-medium56" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 165)
+
+[node name="boundary-medium57" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 168)
+
+[node name="boundary-medium58" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 171)
+
+[node name="boundary-medium59" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 174)
+
+[node name="boundary-medium60" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 177)
+
+[node name="boundary-medium61" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 180)
+
+[node name="boundary-medium62" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 183)
+
+[node name="boundary-medium63" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 186)
+
+[node name="boundary-medium64" parent="World/RightWall" instance=ExtResource("5_uit6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 189)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
