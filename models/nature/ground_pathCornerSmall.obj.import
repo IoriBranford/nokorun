@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bw4jt8wokp0we"
+path="res://.godot/imported/ground_pathCornerSmall.obj-9894109064f6e60186437b1393f5d2ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathCornerSmall.obj-9894109064f6e60186437b1393f5d2ef.mesh"]
+
+source_file="res://models/nature/ground_pathCornerSmall.obj"
+dest_files=["res://.godot/imported/ground_pathCornerSmall.obj-9894109064f6e60186437b1393f5d2ef.mesh", "res://.godot/imported/ground_pathCornerSmall.obj-9894109064f6e60186437b1393f5d2ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

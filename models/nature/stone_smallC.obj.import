@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkn7r76vo6114"
+path="res://.godot/imported/stone_smallC.obj-88e485c670733586ec9ad237d886e7fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_smallC.obj-88e485c670733586ec9ad237d886e7fc.mesh"]
+
+source_file="res://models/nature/stone_smallC.obj"
+dest_files=["res://.godot/imported/stone_smallC.obj-88e485c670733586ec9ad237d886e7fc.mesh", "res://.godot/imported/stone_smallC.obj-88e485c670733586ec9ad237d886e7fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

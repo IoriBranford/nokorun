@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fgxxglj1522g"
+path="res://.godot/imported/flower_redC.obj-abad7b94f9324c66304da93e6215f08e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flower_redC.obj-abad7b94f9324c66304da93e6215f08e.mesh"]
+
+source_file="res://models/nature/flower_redC.obj"
+dest_files=["res://.godot/imported/flower_redC.obj-abad7b94f9324c66304da93e6215f08e.mesh", "res://.godot/imported/flower_redC.obj-abad7b94f9324c66304da93e6215f08e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

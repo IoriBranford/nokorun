@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgdicva3r5cf7"
+path="res://.godot/imported/tree_plateau.obj-d69e3acb70dd30eb3358d6c0993d6622.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_plateau.obj-d69e3acb70dd30eb3358d6c0993d6622.mesh"]
+
+source_file="res://models/nature/tree_plateau.obj"
+dest_files=["res://.godot/imported/tree_plateau.obj-d69e3acb70dd30eb3358d6c0993d6622.mesh", "res://.godot/imported/tree_plateau.obj-d69e3acb70dd30eb3358d6c0993d6622.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

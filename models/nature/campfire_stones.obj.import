@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfk1yn2ih1o4u"
+path="res://.godot/imported/campfire_stones.obj-7adcf000d059bde89437e0cbd092088c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/campfire_stones.obj-7adcf000d059bde89437e0cbd092088c.mesh"]
+
+source_file="res://models/nature/campfire_stones.obj"
+dest_files=["res://.godot/imported/campfire_stones.obj-7adcf000d059bde89437e0cbd092088c.mesh", "res://.godot/imported/campfire_stones.obj-7adcf000d059bde89437e0cbd092088c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

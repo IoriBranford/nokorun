@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmhielmcccpmx"
+path="res://.godot/imported/cliff_blockHalf_stone.obj-9b9ce1b2e4a5fa125b2c5c493768dbe1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockHalf_stone.obj-9b9ce1b2e4a5fa125b2c5c493768dbe1.mesh"]
+
+source_file="res://models/nature/cliff_blockHalf_stone.obj"
+dest_files=["res://.godot/imported/cliff_blockHalf_stone.obj-9b9ce1b2e4a5fa125b2c5c493768dbe1.mesh", "res://.godot/imported/cliff_blockHalf_stone.obj-9b9ce1b2e4a5fa125b2c5c493768dbe1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,1328 @@
+[gd_scene load_steps=331 format=3 uid="uid://ceoaqwfein7yp"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxq577b1bh263" path="res://models/nature/bed.obj" id="1_xlvr7"]
+[ext_resource type="ArrayMesh" uid="uid://b4eveycq3r3sv" path="res://models/nature/bed_floor.obj" id="2_37nds"]
+[ext_resource type="ArrayMesh" uid="uid://c1so8lvkhk46c" path="res://models/nature/bridge_center_stone.obj" id="3_0e36g"]
+[ext_resource type="ArrayMesh" uid="uid://cbxcuxghgg78w" path="res://models/nature/bridge_center_stoneRound.obj" id="4_c5qh6"]
+[ext_resource type="ArrayMesh" uid="uid://b7dvuwt81wc2m" path="res://models/nature/bridge_center_wood.obj" id="5_n8ehr"]
+[ext_resource type="ArrayMesh" uid="uid://cxjau86mk5yae" path="res://models/nature/bridge_center_woodRound.obj" id="6_anyiu"]
+[ext_resource type="ArrayMesh" uid="uid://ccc2hikwl1kyp" path="res://models/nature/bridge_side_stone.obj" id="7_guw28"]
+[ext_resource type="ArrayMesh" uid="uid://brrly6fg1u0a4" path="res://models/nature/bridge_side_stoneRound.obj" id="8_doidv"]
+[ext_resource type="ArrayMesh" uid="uid://bxa8o4nt65aq8" path="res://models/nature/bridge_side_wood.obj" id="9_qriqj"]
+[ext_resource type="ArrayMesh" uid="uid://e5yyfsbbj33u" path="res://models/nature/bridge_side_woodRound.obj" id="10_6rw84"]
+[ext_resource type="ArrayMesh" uid="uid://pxyrxvo387ff" path="res://models/nature/bridge_stone.obj" id="11_6v3co"]
+[ext_resource type="ArrayMesh" uid="uid://ne8av84v71py" path="res://models/nature/bridge_stoneNarrow.obj" id="12_d8pee"]
+[ext_resource type="ArrayMesh" uid="uid://2i3ai3ay6g4q" path="res://models/nature/bridge_stoneRound.obj" id="13_qe2dw"]
+[ext_resource type="ArrayMesh" uid="uid://dj24oe7t4qn11" path="res://models/nature/bridge_stoneRoundNarrow.obj" id="14_0e65x"]
+[ext_resource type="ArrayMesh" uid="uid://b51ib1cr5v6ia" path="res://models/nature/bridge_wood.obj" id="15_8urcy"]
+[ext_resource type="ArrayMesh" uid="uid://bk1qe66emp56v" path="res://models/nature/bridge_woodNarrow.obj" id="16_ovhkn"]
+[ext_resource type="ArrayMesh" uid="uid://bspocnf08tfbm" path="res://models/nature/bridge_woodRound.obj" id="17_eyq1c"]
+[ext_resource type="ArrayMesh" uid="uid://l4ftgb7ocquw" path="res://models/nature/bridge_woodRoundNarrow.obj" id="18_6oddp"]
+[ext_resource type="ArrayMesh" uid="uid://jye37cj4eke" path="res://models/nature/cactus_short.obj" id="19_olwci"]
+[ext_resource type="ArrayMesh" uid="uid://dybwwygbajv3p" path="res://models/nature/cactus_tall.obj" id="20_ocu8c"]
+[ext_resource type="ArrayMesh" uid="uid://db7nyp0qw4shv" path="res://models/nature/campfire_bricks.obj" id="21_h31qr"]
+[ext_resource type="ArrayMesh" uid="uid://cofjya6tefgqw" path="res://models/nature/campfire_logs.obj" id="22_jm48m"]
+[ext_resource type="ArrayMesh" uid="uid://cy0lbkpdfj527" path="res://models/nature/campfire_planks.obj" id="23_y2yae"]
+[ext_resource type="ArrayMesh" uid="uid://dfk1yn2ih1o4u" path="res://models/nature/campfire_stones.obj" id="24_4bacy"]
+[ext_resource type="ArrayMesh" uid="uid://bcib18056yamg" path="res://models/nature/canoe.obj" id="25_g70bq"]
+[ext_resource type="ArrayMesh" uid="uid://d15sp7dps54lu" path="res://models/nature/canoe_paddle.obj" id="26_jcfok"]
+[ext_resource type="ArrayMesh" uid="uid://dgwl4b00dj72" path="res://models/nature/cliff_blockCave_rock.obj" id="27_mof8e"]
+[ext_resource type="ArrayMesh" uid="uid://81bfeautsqo" path="res://models/nature/cliff_blockCave_stone.obj" id="28_if86l"]
+[ext_resource type="ArrayMesh" uid="uid://2l8cb2xuqugl" path="res://models/nature/cliff_blockDiagonal_rock.obj" id="29_if7g6"]
+[ext_resource type="ArrayMesh" uid="uid://0xs82kpm3rls" path="res://models/nature/cliff_blockDiagonal_stone.obj" id="30_ouvq5"]
+[ext_resource type="ArrayMesh" uid="uid://b4ypuygigfsh4" path="res://models/nature/cliff_blockHalf_rock.obj" id="31_wdlx7"]
+[ext_resource type="ArrayMesh" uid="uid://cmhielmcccpmx" path="res://models/nature/cliff_blockHalf_stone.obj" id="32_alu6s"]
+[ext_resource type="ArrayMesh" uid="uid://cga8i2gvpemsq" path="res://models/nature/cliff_blockQuarter_rock.obj" id="33_qi6th"]
+[ext_resource type="ArrayMesh" uid="uid://cm63vvtluw04q" path="res://models/nature/cliff_blockQuarter_stone.obj" id="34_f2fe8"]
+[ext_resource type="ArrayMesh" uid="uid://cceuy82q47niu" path="res://models/nature/cliff_blockSlopeHalfWalls_rock.obj" id="35_eob3h"]
+[ext_resource type="ArrayMesh" uid="uid://bim26auftqg86" path="res://models/nature/cliff_blockSlopeHalfWalls_stone.obj" id="36_7k15f"]
+[ext_resource type="ArrayMesh" uid="uid://djpqe7812rem7" path="res://models/nature/cliff_blockSlopeWalls_rock.obj" id="37_bf288"]
+[ext_resource type="ArrayMesh" uid="uid://t8jdo5hapg2m" path="res://models/nature/cliff_blockSlopeWalls_stone.obj" id="38_6bqlx"]
+[ext_resource type="ArrayMesh" uid="uid://h8ytk534xapi" path="res://models/nature/cliff_blockSlope_rock.obj" id="39_wty6i"]
+[ext_resource type="ArrayMesh" uid="uid://dngefvda3yebw" path="res://models/nature/cliff_blockSlope_stone.obj" id="40_n8lxk"]
+[ext_resource type="ArrayMesh" uid="uid://bfyxh524wyovc" path="res://models/nature/cliff_block_rock.obj" id="41_cn1lh"]
+[ext_resource type="ArrayMesh" uid="uid://xcqiithfsd1" path="res://models/nature/cliff_block_stone.obj" id="42_12ybw"]
+[ext_resource type="ArrayMesh" uid="uid://cj8p07tqccvjm" path="res://models/nature/cliff_cave_rock.obj" id="43_v06kg"]
+[ext_resource type="ArrayMesh" uid="uid://b1h21ycmff8kp" path="res://models/nature/cliff_cave_stone.obj" id="44_86n0l"]
+[ext_resource type="ArrayMesh" uid="uid://puexwalx8vvg" path="res://models/nature/cliff_cornerInnerLarge_rock.obj" id="45_rxhq1"]
+[ext_resource type="ArrayMesh" uid="uid://dohfe6p53qgnj" path="res://models/nature/cliff_cornerInnerLarge_stone.obj" id="46_ua5w8"]
+[ext_resource type="ArrayMesh" uid="uid://c38al0rijueq8" path="res://models/nature/cliff_cornerInnerTop_rock.obj" id="47_o163j"]
+[ext_resource type="ArrayMesh" uid="uid://dkqvfnm4jd1jq" path="res://models/nature/cliff_cornerInnerTop_stone.obj" id="48_0v5ny"]
+[ext_resource type="ArrayMesh" uid="uid://cv881dawdevb1" path="res://models/nature/cliff_cornerInner_rock.obj" id="49_atera"]
+[ext_resource type="ArrayMesh" uid="uid://cls0k5pjblgdk" path="res://models/nature/cliff_cornerInner_stone.obj" id="50_rfosu"]
+[ext_resource type="ArrayMesh" uid="uid://dpcyfldyt6rg7" path="res://models/nature/cliff_cornerLarge_rock.obj" id="51_8urli"]
+[ext_resource type="ArrayMesh" uid="uid://c3hwp3eo78cpd" path="res://models/nature/cliff_cornerLarge_stone.obj" id="52_okyyu"]
+[ext_resource type="ArrayMesh" uid="uid://cowo478fvxcw1" path="res://models/nature/cliff_cornerTop_rock.obj" id="53_yuwb7"]
+[ext_resource type="ArrayMesh" uid="uid://ccpemf30j4p2a" path="res://models/nature/cliff_cornerTop_stone.obj" id="54_dxpnu"]
+[ext_resource type="ArrayMesh" uid="uid://dx8j3cu536ub5" path="res://models/nature/cliff_corner_rock.obj" id="55_0038b"]
+[ext_resource type="ArrayMesh" uid="uid://byifpo1n0xi1h" path="res://models/nature/cliff_corner_stone.obj" id="56_8fn1s"]
+[ext_resource type="ArrayMesh" uid="uid://dusyume3d8q4q" path="res://models/nature/cliff_diagonal_rock.obj" id="57_0reh2"]
+[ext_resource type="ArrayMesh" uid="uid://epowfc6w1vlq" path="res://models/nature/cliff_diagonal_stone.obj" id="58_dfgpv"]
+[ext_resource type="ArrayMesh" uid="uid://de1r4yg7ybxgo" path="res://models/nature/cliff_halfCornerInner_rock.obj" id="59_r76u1"]
+[ext_resource type="ArrayMesh" uid="uid://cfcio2uehgx0n" path="res://models/nature/cliff_halfCornerInner_stone.obj" id="60_fod42"]
+[ext_resource type="ArrayMesh" uid="uid://b4w6vrqjs7ne8" path="res://models/nature/cliff_halfCorner_rock.obj" id="61_g26ml"]
+[ext_resource type="ArrayMesh" uid="uid://bw5w7tp8cl6ck" path="res://models/nature/cliff_halfCorner_stone.obj" id="62_nvqwb"]
+[ext_resource type="ArrayMesh" uid="uid://ckgewakku6ww2" path="res://models/nature/cliff_half_rock.obj" id="63_wx1b1"]
+[ext_resource type="ArrayMesh" uid="uid://bqnpuuqdkk7q0" path="res://models/nature/cliff_half_stone.obj" id="64_6cjck"]
+[ext_resource type="ArrayMesh" uid="uid://dadarxkf37nn4" path="res://models/nature/cliff_large_rock.obj" id="65_fjm2a"]
+[ext_resource type="ArrayMesh" uid="uid://bneqmpxs3spta" path="res://models/nature/cliff_large_stone.obj" id="66_uea41"]
+[ext_resource type="ArrayMesh" uid="uid://bpiwy77pw86o" path="res://models/nature/cliff_rock.obj" id="67_733e1"]
+[ext_resource type="ArrayMesh" uid="uid://dnemg3w7tm7qd" path="res://models/nature/cliff_stepsCornerInner_rock.obj" id="68_xhxft"]
+[ext_resource type="ArrayMesh" uid="uid://bihdqfxffdqft" path="res://models/nature/cliff_stepsCornerInner_stone.obj" id="69_3ey2s"]
+[ext_resource type="ArrayMesh" uid="uid://qudroytob1tb" path="res://models/nature/cliff_stepsCorner_rock.obj" id="70_hnxmm"]
+[ext_resource type="ArrayMesh" uid="uid://ic2pkk2t66xe" path="res://models/nature/cliff_stepsCorner_stone.obj" id="71_74x3v"]
+[ext_resource type="ArrayMesh" uid="uid://dvgtvqvdq6am4" path="res://models/nature/cliff_steps_rock.obj" id="72_qvkjq"]
+[ext_resource type="ArrayMesh" uid="uid://ckevb3geuhdcb" path="res://models/nature/cliff_steps_stone.obj" id="73_650we"]
+[ext_resource type="ArrayMesh" uid="uid://datldvs0feg2k" path="res://models/nature/cliff_stone.obj" id="74_nrxot"]
+[ext_resource type="ArrayMesh" uid="uid://b4dta63gft4vc" path="res://models/nature/cliff_topDiagonal_rock.obj" id="75_2bg12"]
+[ext_resource type="ArrayMesh" uid="uid://c0jrpyuta1jbs" path="res://models/nature/cliff_topDiagonal_stone.obj" id="76_qr6n4"]
+[ext_resource type="ArrayMesh" uid="uid://b5842aiiwjvpl" path="res://models/nature/cliff_top_rock.obj" id="77_f0dan"]
+[ext_resource type="ArrayMesh" uid="uid://cqyg5w8xxrbb8" path="res://models/nature/cliff_top_stone.obj" id="78_4klov"]
+[ext_resource type="ArrayMesh" uid="uid://d1xpt46dv5iiq" path="res://models/nature/cliff_waterfallTop_rock.obj" id="79_vqdso"]
+[ext_resource type="ArrayMesh" uid="uid://b3nhd4qfvtvgh" path="res://models/nature/cliff_waterfallTop_stone.obj" id="80_mxvv8"]
+[ext_resource type="ArrayMesh" uid="uid://dg2yxew2gpmoy" path="res://models/nature/cliff_waterfall_rock.obj" id="81_chag3"]
+[ext_resource type="ArrayMesh" uid="uid://dur7y1yrnnv5v" path="res://models/nature/cliff_waterfall_stone.obj" id="82_6gdv6"]
+[ext_resource type="ArrayMesh" uid="uid://cqtsxrpylp0ym" path="res://models/nature/crops_bambooStageA.obj" id="83_84yts"]
+[ext_resource type="ArrayMesh" uid="uid://g3vci3ngj2ld" path="res://models/nature/crops_bambooStageB.obj" id="84_655k6"]
+[ext_resource type="ArrayMesh" uid="uid://c65r642wjr3ro" path="res://models/nature/crops_cornStageA.obj" id="85_elagu"]
+[ext_resource type="ArrayMesh" uid="uid://dnsw3rvlcm202" path="res://models/nature/crops_cornStageB.obj" id="86_5dryx"]
+[ext_resource type="ArrayMesh" uid="uid://br2nva52qwkko" path="res://models/nature/crops_cornStageC.obj" id="87_aqicf"]
+[ext_resource type="ArrayMesh" uid="uid://byf0ybwr4id8l" path="res://models/nature/crops_cornStageD.obj" id="88_8t1x7"]
+[ext_resource type="ArrayMesh" uid="uid://divgqb8w5bxxb" path="res://models/nature/crops_dirtDoubleRow.obj" id="89_dhchq"]
+[ext_resource type="ArrayMesh" uid="uid://bapmjd7otw26a" path="res://models/nature/crops_dirtDoubleRowCorner.obj" id="90_027bw"]
+[ext_resource type="ArrayMesh" uid="uid://bblustgtjgx6s" path="res://models/nature/crops_dirtDoubleRowEnd.obj" id="91_23mo6"]
+[ext_resource type="ArrayMesh" uid="uid://ds2lprjsvxai8" path="res://models/nature/crops_dirtRow.obj" id="92_jvdst"]
+[ext_resource type="ArrayMesh" uid="uid://x8pl00vo7c6c" path="res://models/nature/crops_dirtRowCorner.obj" id="93_7qxin"]
+[ext_resource type="ArrayMesh" uid="uid://dnge8q5400so2" path="res://models/nature/crops_dirtRowEnd.obj" id="94_p3ui5"]
+[ext_resource type="ArrayMesh" uid="uid://dmnrk7hg5na8c" path="res://models/nature/crops_dirtSingle.obj" id="95_rr4g4"]
+[ext_resource type="ArrayMesh" uid="uid://b2mp38tdefn8d" path="res://models/nature/crops_leafsStageA.obj" id="96_schpj"]
+[ext_resource type="ArrayMesh" uid="uid://fjhbupq4vx1b" path="res://models/nature/crops_leafsStageB.obj" id="97_own0p"]
+[ext_resource type="ArrayMesh" uid="uid://cd5slsggsmqbf" path="res://models/nature/crops_wheatStageA.obj" id="98_kq0aq"]
+[ext_resource type="ArrayMesh" uid="uid://drv58v7i61hag" path="res://models/nature/crops_wheatStageB.obj" id="99_jnrub"]
+[ext_resource type="ArrayMesh" uid="uid://cw4ch0q6kij6c" path="res://models/nature/crop_carrot.obj" id="100_146ry"]
+[ext_resource type="ArrayMesh" uid="uid://djvnf3t2qdj68" path="res://models/nature/crop_melon.obj" id="101_8kp8w"]
+[ext_resource type="ArrayMesh" uid="uid://1uows04tbed" path="res://models/nature/crop_pumpkin.obj" id="102_6jbbd"]
+[ext_resource type="ArrayMesh" uid="uid://sn3ia73spxty" path="res://models/nature/crop_turnip.obj" id="103_va5jc"]
+[ext_resource type="ArrayMesh" uid="uid://cg5iq2uwa3gtb" path="res://models/nature/fence_bend.obj" id="104_fj3y2"]
+[ext_resource type="ArrayMesh" uid="uid://duotkvqcyfu0f" path="res://models/nature/fence_bendCenter.obj" id="105_7ntnc"]
+[ext_resource type="ArrayMesh" uid="uid://b3jlbbxue68na" path="res://models/nature/fence_corner.obj" id="106_rt6tt"]
+[ext_resource type="ArrayMesh" uid="uid://cbqsysh50llrb" path="res://models/nature/fence_gate.obj" id="107_smt8k"]
+[ext_resource type="ArrayMesh" uid="uid://c6i8ahh48q2le" path="res://models/nature/fence_planks.obj" id="108_yw6cs"]
+[ext_resource type="ArrayMesh" uid="uid://b81xy0px0exfi" path="res://models/nature/fence_planksDouble.obj" id="109_4q5m0"]
+[ext_resource type="ArrayMesh" uid="uid://btgtne8on2l0b" path="res://models/nature/fence_simple.obj" id="110_2li7x"]
+[ext_resource type="ArrayMesh" uid="uid://bawhir6e1evpd" path="res://models/nature/fence_simpleCenter.obj" id="111_ninom"]
+[ext_resource type="ArrayMesh" uid="uid://f8tyua7ongcq" path="res://models/nature/fence_simpleDiagonal.obj" id="112_7bc7o"]
+[ext_resource type="ArrayMesh" uid="uid://crh6xyd2rwupo" path="res://models/nature/fence_simpleDiagonalCenter.obj" id="113_cawvo"]
+[ext_resource type="ArrayMesh" uid="uid://drstapygppoeq" path="res://models/nature/fence_simpleHigh.obj" id="114_4w4eg"]
+[ext_resource type="ArrayMesh" uid="uid://jus02rgqwxrb" path="res://models/nature/fence_simpleLow.obj" id="115_ybp58"]
+[ext_resource type="ArrayMesh" uid="uid://bxuil1of42p08" path="res://models/nature/flower_purpleA.obj" id="116_ioo4g"]
+[ext_resource type="ArrayMesh" uid="uid://dgvcgk431hecu" path="res://models/nature/flower_purpleB.obj" id="117_qyueq"]
+[ext_resource type="ArrayMesh" uid="uid://ba7i1raltl2w5" path="res://models/nature/flower_purpleC.obj" id="118_b0w0k"]
+[ext_resource type="ArrayMesh" uid="uid://dngydw6i3p7lq" path="res://models/nature/flower_redA.obj" id="119_bgsu4"]
+[ext_resource type="ArrayMesh" uid="uid://b4w43jrl0qtb3" path="res://models/nature/flower_redB.obj" id="120_o15yf"]
+[ext_resource type="ArrayMesh" uid="uid://fgxxglj1522g" path="res://models/nature/flower_redC.obj" id="121_hna5n"]
+[ext_resource type="ArrayMesh" uid="uid://dq8ph7lwkqxmg" path="res://models/nature/flower_yellowA.obj" id="122_yg6e8"]
+[ext_resource type="ArrayMesh" uid="uid://pvptb10xxfsc" path="res://models/nature/flower_yellowB.obj" id="123_au6hn"]
+[ext_resource type="ArrayMesh" uid="uid://bojs7poigls7i" path="res://models/nature/flower_yellowC.obj" id="124_kjf8m"]
+[ext_resource type="ArrayMesh" uid="uid://c2xqb4hnv1lj3" path="res://models/nature/grass.obj" id="125_okix2"]
+[ext_resource type="ArrayMesh" uid="uid://cn6mw7q0oglbb" path="res://models/nature/grass_large.obj" id="126_taiqi"]
+[ext_resource type="ArrayMesh" uid="uid://b8eltrlgof6g0" path="res://models/nature/grass_leafs.obj" id="127_rwjhk"]
+[ext_resource type="ArrayMesh" uid="uid://b6rvjdivobu4d" path="res://models/nature/grass_leafsLarge.obj" id="128_6d836"]
+[ext_resource type="ArrayMesh" uid="uid://0hvvt0ecimsw" path="res://models/nature/ground_grass.obj" id="129_4nw25"]
+[ext_resource type="ArrayMesh" uid="uid://bfktg6fa4andf" path="res://models/nature/ground_pathBend.obj" id="130_iod4e"]
+[ext_resource type="ArrayMesh" uid="uid://8ckgy4c12jnd" path="res://models/nature/ground_pathBendBank.obj" id="131_0tdlh"]
+[ext_resource type="ArrayMesh" uid="uid://c40lxn4a8lusf" path="res://models/nature/ground_pathCorner.obj" id="132_ervoy"]
+[ext_resource type="ArrayMesh" uid="uid://bw4jt8wokp0we" path="res://models/nature/ground_pathCornerSmall.obj" id="133_4ogkm"]
+[ext_resource type="ArrayMesh" uid="uid://bd50h2g2nwr3" path="res://models/nature/ground_pathCross.obj" id="134_pw540"]
+[ext_resource type="ArrayMesh" uid="uid://6wnboneh848a" path="res://models/nature/ground_pathEnd.obj" id="135_u0jj7"]
+[ext_resource type="ArrayMesh" uid="uid://i0x5qsv8m5ne" path="res://models/nature/ground_pathEndClosed.obj" id="136_f4pgq"]
+[ext_resource type="ArrayMesh" uid="uid://dagf6h2tta6bn" path="res://models/nature/ground_pathOpen.obj" id="137_5jnkt"]
+[ext_resource type="ArrayMesh" uid="uid://c5oli2gwe2s6e" path="res://models/nature/ground_pathRocks.obj" id="138_nlvyc"]
+[ext_resource type="ArrayMesh" uid="uid://dk6b8yfsj7ri5" path="res://models/nature/ground_pathSide.obj" id="139_csqfj"]
+[ext_resource type="ArrayMesh" uid="uid://jpddl0s0m445" path="res://models/nature/ground_pathSideOpen.obj" id="140_2alei"]
+[ext_resource type="ArrayMesh" uid="uid://gc45tinfbusc" path="res://models/nature/ground_pathSplit.obj" id="141_751uq"]
+[ext_resource type="ArrayMesh" uid="uid://d1vojikaftse1" path="res://models/nature/ground_pathStraight.obj" id="142_e33u8"]
+[ext_resource type="ArrayMesh" uid="uid://c4dlynpqywij8" path="res://models/nature/ground_pathTile.obj" id="143_xv882"]
+[ext_resource type="ArrayMesh" uid="uid://cbmldnyion0ur" path="res://models/nature/ground_riverBend.obj" id="144_8be13"]
+[ext_resource type="ArrayMesh" uid="uid://bvq3go3iaw162" path="res://models/nature/ground_riverBendBank.obj" id="145_gm6po"]
+[ext_resource type="ArrayMesh" uid="uid://jwd4llj5wu3a" path="res://models/nature/ground_riverCorner.obj" id="146_4nbsa"]
+[ext_resource type="ArrayMesh" uid="uid://b3dl7e58wbdaa" path="res://models/nature/ground_riverCornerSmall.obj" id="147_wig7t"]
+[ext_resource type="ArrayMesh" uid="uid://ctviwijmhocsp" path="res://models/nature/ground_riverCross.obj" id="148_y38f8"]
+[ext_resource type="ArrayMesh" uid="uid://bmhx2g35f7i2i" path="res://models/nature/ground_riverEnd.obj" id="149_hshc1"]
+[ext_resource type="ArrayMesh" uid="uid://d2cc8lxkmidew" path="res://models/nature/ground_riverEndClosed.obj" id="150_uc58i"]
+[ext_resource type="ArrayMesh" uid="uid://b4bxynojq2573" path="res://models/nature/ground_riverOpen.obj" id="151_4vo0k"]
+[ext_resource type="ArrayMesh" uid="uid://bd3jvww4c3e3e" path="res://models/nature/ground_riverRocks.obj" id="152_itoqe"]
+[ext_resource type="ArrayMesh" uid="uid://ceq7nkqah0xel" path="res://models/nature/ground_riverSide.obj" id="153_ua5sl"]
+[ext_resource type="ArrayMesh" uid="uid://cenbv1y8qhmov" path="res://models/nature/ground_riverSideOpen.obj" id="154_kpqr4"]
+[ext_resource type="ArrayMesh" uid="uid://coce3djkp47xa" path="res://models/nature/ground_riverSplit.obj" id="155_paox2"]
+[ext_resource type="ArrayMesh" uid="uid://cs2s1bh1dva47" path="res://models/nature/ground_riverStraight.obj" id="156_b0xaw"]
+[ext_resource type="ArrayMesh" uid="uid://ccs40ohirg3da" path="res://models/nature/ground_riverTile.obj" id="157_k4i3k"]
+[ext_resource type="ArrayMesh" uid="uid://dbydgo465er1g" path="res://models/nature/hanging_moss.obj" id="158_oj7el"]
+[ext_resource type="ArrayMesh" uid="uid://djtqcl84nqdo3" path="res://models/nature/lily_large.obj" id="159_e5nen"]
+[ext_resource type="ArrayMesh" uid="uid://btisi08lnylfi" path="res://models/nature/lily_small.obj" id="160_queun"]
+[ext_resource type="ArrayMesh" uid="uid://cjvb0ahbcg68j" path="res://models/nature/log.obj" id="161_t3be2"]
+[ext_resource type="ArrayMesh" uid="uid://qgg5vt7vr0dk" path="res://models/nature/log_large.obj" id="162_awk6q"]
+[ext_resource type="ArrayMesh" uid="uid://dy85esjo8d52l" path="res://models/nature/log_stack.obj" id="163_0gvf2"]
+[ext_resource type="ArrayMesh" uid="uid://dlsur7epono8v" path="res://models/nature/log_stackLarge.obj" id="164_qu506"]
+[ext_resource type="ArrayMesh" uid="uid://byahi2ohrkukm" path="res://models/nature/mushroom_red.obj" id="165_426qc"]
+[ext_resource type="ArrayMesh" uid="uid://db5m7uiquweb2" path="res://models/nature/mushroom_redGroup.obj" id="166_416up"]
+[ext_resource type="ArrayMesh" uid="uid://dewf4swr76b40" path="res://models/nature/mushroom_redTall.obj" id="167_g2mo3"]
+[ext_resource type="ArrayMesh" uid="uid://ne8qckoefdwf" path="res://models/nature/mushroom_tan.obj" id="168_hirob"]
+[ext_resource type="ArrayMesh" uid="uid://c563cwa3343k7" path="res://models/nature/mushroom_tanGroup.obj" id="169_esl7e"]
+[ext_resource type="ArrayMesh" uid="uid://c63qlrq3uio0l" path="res://models/nature/mushroom_tanTall.obj" id="170_wfkgx"]
+[ext_resource type="ArrayMesh" uid="uid://bufhy6v5mjobw" path="res://models/nature/path_stone.obj" id="171_tagkg"]
+[ext_resource type="ArrayMesh" uid="uid://ccmjlwl5rib5i" path="res://models/nature/path_stoneCircle.obj" id="172_016q3"]
+[ext_resource type="ArrayMesh" uid="uid://clsmmeqmmcg2m" path="res://models/nature/path_stoneCorner.obj" id="173_ikf42"]
+[ext_resource type="ArrayMesh" uid="uid://dqv6kub8b6qsf" path="res://models/nature/path_stoneEnd.obj" id="174_vfly2"]
+[ext_resource type="ArrayMesh" uid="uid://bfmejgipao7e0" path="res://models/nature/path_wood.obj" id="175_kp4ej"]
+[ext_resource type="ArrayMesh" uid="uid://5dvy7qyox6eq" path="res://models/nature/path_woodCorner.obj" id="176_drff2"]
+[ext_resource type="ArrayMesh" uid="uid://if7liex130i6" path="res://models/nature/path_woodEnd.obj" id="177_rxrcs"]
+[ext_resource type="ArrayMesh" uid="uid://c2e7w3t22anvx" path="res://models/nature/plant_bush.obj" id="178_iyxxs"]
+[ext_resource type="ArrayMesh" uid="uid://c0ygkm5cgdrbu" path="res://models/nature/plant_bushDetailed.obj" id="179_cdjjp"]
+[ext_resource type="ArrayMesh" uid="uid://ir1pooxencl" path="res://models/nature/plant_bushLarge.obj" id="180_tk63q"]
+[ext_resource type="ArrayMesh" uid="uid://drufh7ni385pb" path="res://models/nature/plant_bushLargeTriangle.obj" id="181_nd48r"]
+[ext_resource type="ArrayMesh" uid="uid://bbtyxlyu3ybl4" path="res://models/nature/plant_bushSmall.obj" id="182_vveq8"]
+[ext_resource type="ArrayMesh" uid="uid://dj8nodutnfh3x" path="res://models/nature/plant_bushTriangle.obj" id="183_jlpid"]
+[ext_resource type="ArrayMesh" uid="uid://br0e4edlc8v1d" path="res://models/nature/plant_flatShort.obj" id="184_npwqc"]
+[ext_resource type="ArrayMesh" uid="uid://6wxr30ea8wb0" path="res://models/nature/plant_flatTall.obj" id="185_rdpsx"]
+[ext_resource type="ArrayMesh" uid="uid://66bt1f2i85qu" path="res://models/nature/platform_beach.obj" id="186_aopop"]
+[ext_resource type="ArrayMesh" uid="uid://c3plc2biy2s5r" path="res://models/nature/platform_grass.obj" id="187_0u2xv"]
+[ext_resource type="ArrayMesh" uid="uid://d3mp5dkghe4sd" path="res://models/nature/platform_stone.obj" id="188_64b6a"]
+[ext_resource type="ArrayMesh" uid="uid://d4ku1ah8uketd" path="res://models/nature/pot_large.obj" id="189_c2hlr"]
+[ext_resource type="ArrayMesh" uid="uid://de46m7m36guuq" path="res://models/nature/pot_small.obj" id="190_bjkop"]
+[ext_resource type="ArrayMesh" uid="uid://bu8sfn7he7b33" path="res://models/nature/rock_largeA.obj" id="191_uo5ln"]
+[ext_resource type="ArrayMesh" uid="uid://0fpuuxljel15" path="res://models/nature/rock_largeB.obj" id="192_eqwcb"]
+[ext_resource type="ArrayMesh" uid="uid://btur640vxjyt7" path="res://models/nature/rock_largeC.obj" id="193_ow7qa"]
+[ext_resource type="ArrayMesh" uid="uid://brsrt2mxm0ade" path="res://models/nature/rock_largeD.obj" id="194_vmxo7"]
+[ext_resource type="ArrayMesh" uid="uid://dyv4ejfkefqy7" path="res://models/nature/rock_largeE.obj" id="195_ctx5b"]
+[ext_resource type="ArrayMesh" uid="uid://dmwncu1yuu20y" path="res://models/nature/rock_largeF.obj" id="196_n4c0t"]
+[ext_resource type="ArrayMesh" uid="uid://082kwh1aj2a6" path="res://models/nature/rock_smallA.obj" id="197_bwhpy"]
+[ext_resource type="ArrayMesh" uid="uid://dtyvy5nu1ebhh" path="res://models/nature/rock_smallB.obj" id="198_y3ylj"]
+[ext_resource type="ArrayMesh" uid="uid://dpbhabgn84dw5" path="res://models/nature/rock_smallC.obj" id="199_nc36s"]
+[ext_resource type="ArrayMesh" uid="uid://5mgs6b2up6np" path="res://models/nature/rock_smallD.obj" id="200_q7vx3"]
+[ext_resource type="ArrayMesh" uid="uid://cg43bqnnm2db7" path="res://models/nature/rock_smallE.obj" id="201_2fn2p"]
+[ext_resource type="ArrayMesh" uid="uid://gbe7tovn56rv" path="res://models/nature/rock_smallF.obj" id="202_70uu5"]
+[ext_resource type="ArrayMesh" uid="uid://d1elcaas4w74" path="res://models/nature/rock_smallFlatA.obj" id="203_hox7h"]
+[ext_resource type="ArrayMesh" uid="uid://6at504rmgpsv" path="res://models/nature/rock_smallFlatB.obj" id="204_886m1"]
+[ext_resource type="ArrayMesh" uid="uid://bb86pdakvyfo2" path="res://models/nature/rock_smallFlatC.obj" id="205_6pj6s"]
+[ext_resource type="ArrayMesh" uid="uid://ctn7qhyhfjf0w" path="res://models/nature/rock_smallG.obj" id="206_3x8mc"]
+[ext_resource type="ArrayMesh" uid="uid://co0n8pc3uogmf" path="res://models/nature/rock_smallH.obj" id="207_cvrn1"]
+[ext_resource type="ArrayMesh" uid="uid://d4n0u3wh72y2r" path="res://models/nature/rock_smallI.obj" id="208_8qnf3"]
+[ext_resource type="ArrayMesh" uid="uid://qieg46nckoo3" path="res://models/nature/rock_smallTopA.obj" id="209_u3iyx"]
+[ext_resource type="ArrayMesh" uid="uid://c1odd61icqyds" path="res://models/nature/rock_smallTopB.obj" id="210_l2v3r"]
+[ext_resource type="ArrayMesh" uid="uid://ccqqievokexfc" path="res://models/nature/rock_tallA.obj" id="211_38hpx"]
+[ext_resource type="ArrayMesh" uid="uid://bi8jgnqb56vdj" path="res://models/nature/rock_tallB.obj" id="212_6u5yd"]
+[ext_resource type="ArrayMesh" uid="uid://xj3v2hcv73cg" path="res://models/nature/rock_tallC.obj" id="213_p3f0q"]
+[ext_resource type="ArrayMesh" uid="uid://dtdjqp4m4r4nr" path="res://models/nature/rock_tallD.obj" id="214_8jbjr"]
+[ext_resource type="ArrayMesh" uid="uid://8e5mawirt2pi" path="res://models/nature/rock_tallE.obj" id="215_76wi8"]
+[ext_resource type="ArrayMesh" uid="uid://bjayw7pjt0rqv" path="res://models/nature/rock_tallF.obj" id="216_hq6on"]
+[ext_resource type="ArrayMesh" uid="uid://btri7kdx0jhdf" path="res://models/nature/rock_tallG.obj" id="217_xtmja"]
+[ext_resource type="ArrayMesh" uid="uid://fg5wvm6uugx8" path="res://models/nature/rock_tallH.obj" id="218_o8apd"]
+[ext_resource type="ArrayMesh" uid="uid://kvvmka0c035y" path="res://models/nature/rock_tallI.obj" id="219_tk8op"]
+[ext_resource type="ArrayMesh" uid="uid://cxods3a5up5rd" path="res://models/nature/rock_tallJ.obj" id="220_2gqa4"]
+[ext_resource type="ArrayMesh" uid="uid://b480w0ktesnt8" path="res://models/nature/sign.obj" id="221_hb063"]
+[ext_resource type="ArrayMesh" uid="uid://dk26e3ue3q62o" path="res://models/nature/statue_block.obj" id="222_65wh8"]
+[ext_resource type="ArrayMesh" uid="uid://cioaqbcqxc0vt" path="res://models/nature/statue_column.obj" id="223_xcgut"]
+[ext_resource type="ArrayMesh" uid="uid://doqqaknnalec3" path="res://models/nature/statue_columnDamaged.obj" id="224_it3vd"]
+[ext_resource type="ArrayMesh" uid="uid://qjm25rw2ikpl" path="res://models/nature/statue_head.obj" id="225_04mdm"]
+[ext_resource type="ArrayMesh" uid="uid://ckv5gvoj6sk4y" path="res://models/nature/statue_obelisk.obj" id="226_n1xmc"]
+[ext_resource type="ArrayMesh" uid="uid://l6k57xllhk43" path="res://models/nature/statue_ring.obj" id="227_5bfot"]
+[ext_resource type="ArrayMesh" uid="uid://dnh2sesb6ik7o" path="res://models/nature/stone_largeA.obj" id="228_d2vnt"]
+[ext_resource type="ArrayMesh" uid="uid://qs61ebophero" path="res://models/nature/stone_largeB.obj" id="229_a8mc4"]
+[ext_resource type="ArrayMesh" uid="uid://dw0q387n4mk3a" path="res://models/nature/stone_largeC.obj" id="230_vecs6"]
+[ext_resource type="ArrayMesh" uid="uid://03j8ya50yocg" path="res://models/nature/stone_largeD.obj" id="231_ldkn4"]
+[ext_resource type="ArrayMesh" uid="uid://dv01bemby5oix" path="res://models/nature/stone_largeE.obj" id="232_dh2gf"]
+[ext_resource type="ArrayMesh" uid="uid://exxc0vbkchn1" path="res://models/nature/stone_largeF.obj" id="233_m14aa"]
+[ext_resource type="ArrayMesh" uid="uid://crb12o6odbxmw" path="res://models/nature/stone_smallA.obj" id="234_84sw4"]
+[ext_resource type="ArrayMesh" uid="uid://4ap4cbmlyojk" path="res://models/nature/stone_smallB.obj" id="235_jwsvn"]
+[ext_resource type="ArrayMesh" uid="uid://bkn7r76vo6114" path="res://models/nature/stone_smallC.obj" id="236_g6huk"]
+[ext_resource type="ArrayMesh" uid="uid://cs6hqm2s605ql" path="res://models/nature/stone_smallD.obj" id="237_ecapv"]
+[ext_resource type="ArrayMesh" uid="uid://ngg01wgch1eh" path="res://models/nature/stone_smallE.obj" id="238_c3yxu"]
+[ext_resource type="ArrayMesh" uid="uid://deb2lwfkxcffj" path="res://models/nature/stone_smallF.obj" id="239_mjj35"]
+[ext_resource type="ArrayMesh" uid="uid://d0dctbvnh0uct" path="res://models/nature/stone_smallFlatA.obj" id="240_wlv1o"]
+[ext_resource type="ArrayMesh" uid="uid://dshhxq10vordk" path="res://models/nature/stone_smallFlatB.obj" id="241_ol23n"]
+[ext_resource type="ArrayMesh" uid="uid://bpowcg3awls2g" path="res://models/nature/stone_smallFlatC.obj" id="242_ie2pp"]
+[ext_resource type="ArrayMesh" uid="uid://dvchxh3h74gty" path="res://models/nature/stone_smallG.obj" id="243_4aqwu"]
+[ext_resource type="ArrayMesh" uid="uid://ce06l4w7y14um" path="res://models/nature/stone_smallH.obj" id="244_r0nw6"]
+[ext_resource type="ArrayMesh" uid="uid://d36wtrqxwoav3" path="res://models/nature/stone_smallI.obj" id="245_a6b11"]
+[ext_resource type="ArrayMesh" uid="uid://cosrf4mf4ef1n" path="res://models/nature/stone_smallTopA.obj" id="246_e1u0s"]
+[ext_resource type="ArrayMesh" uid="uid://du8q820sgsidr" path="res://models/nature/stone_smallTopB.obj" id="247_7alv6"]
+[ext_resource type="ArrayMesh" uid="uid://tlnopc4uno3k" path="res://models/nature/stone_tallA.obj" id="248_3rm62"]
+[ext_resource type="ArrayMesh" uid="uid://b4odyb354fhv2" path="res://models/nature/stone_tallB.obj" id="249_p8jqu"]
+[ext_resource type="ArrayMesh" uid="uid://b3ff88t7v73d7" path="res://models/nature/stone_tallC.obj" id="250_2gi22"]
+[ext_resource type="ArrayMesh" uid="uid://bnyigjpg5an3u" path="res://models/nature/stone_tallD.obj" id="251_6n4kt"]
+[ext_resource type="ArrayMesh" uid="uid://bc8a7d2kgjnrj" path="res://models/nature/stone_tallE.obj" id="252_3uey0"]
+[ext_resource type="ArrayMesh" uid="uid://bc66uj7llwgs8" path="res://models/nature/stone_tallF.obj" id="253_k6pct"]
+[ext_resource type="ArrayMesh" uid="uid://c6leg5bp7yw0c" path="res://models/nature/stone_tallG.obj" id="254_qw7hc"]
+[ext_resource type="ArrayMesh" uid="uid://nun27vihrnu5" path="res://models/nature/stone_tallH.obj" id="255_g3uqt"]
+[ext_resource type="ArrayMesh" uid="uid://od8gqysqf830" path="res://models/nature/stone_tallI.obj" id="256_iy1gr"]
+[ext_resource type="ArrayMesh" uid="uid://bjep882ecpjc" path="res://models/nature/stone_tallJ.obj" id="257_5kr6b"]
+[ext_resource type="ArrayMesh" uid="uid://b70hkrux2dohj" path="res://models/nature/stump_old.obj" id="258_cei8x"]
+[ext_resource type="ArrayMesh" uid="uid://di06004uyeleb" path="res://models/nature/stump_oldTall.obj" id="259_m30y0"]
+[ext_resource type="ArrayMesh" uid="uid://l5cce1m7i8o" path="res://models/nature/stump_round.obj" id="260_70o0j"]
+[ext_resource type="ArrayMesh" uid="uid://dmr1xu7sx1uwb" path="res://models/nature/stump_roundDetailed.obj" id="261_unkvl"]
+[ext_resource type="ArrayMesh" uid="uid://pnyoc5g5avhe" path="res://models/nature/stump_square.obj" id="262_ey1es"]
+[ext_resource type="ArrayMesh" uid="uid://nh4wfkd5mw3g" path="res://models/nature/stump_squareDetailed.obj" id="263_rsuah"]
+[ext_resource type="ArrayMesh" uid="uid://bvqk1qle3oo1u" path="res://models/nature/stump_squareDetailedWide.obj" id="264_2hmxo"]
+[ext_resource type="ArrayMesh" uid="uid://db3qkm25tugtw" path="res://models/nature/tent_detailedClosed.obj" id="265_v5hbm"]
+[ext_resource type="ArrayMesh" uid="uid://q2iis0nwy1xw" path="res://models/nature/tent_detailedOpen.obj" id="266_8jjm5"]
+[ext_resource type="ArrayMesh" uid="uid://c7onrh1ry4vxo" path="res://models/nature/tent_smallClosed.obj" id="267_021ay"]
+[ext_resource type="ArrayMesh" uid="uid://cju8rqrdnfes4" path="res://models/nature/tent_smallOpen.obj" id="268_kubgs"]
+[ext_resource type="ArrayMesh" uid="uid://dpmamw3prljtx" path="res://models/nature/tree_blocks.obj" id="269_7py6q"]
+[ext_resource type="ArrayMesh" uid="uid://cordfv4gnags2" path="res://models/nature/tree_blocks_dark.obj" id="270_isan8"]
+[ext_resource type="ArrayMesh" uid="uid://4mpq8iqwtrsj" path="res://models/nature/tree_blocks_fall.obj" id="271_xwdun"]
+[ext_resource type="ArrayMesh" uid="uid://c5ws7q5q6rvy3" path="res://models/nature/tree_cone.obj" id="272_s1yk0"]
+[ext_resource type="ArrayMesh" uid="uid://cbdrcowvu17t6" path="res://models/nature/tree_cone_dark.obj" id="273_oi0yl"]
+[ext_resource type="ArrayMesh" uid="uid://bmq31skc4573t" path="res://models/nature/tree_cone_fall.obj" id="274_e3ufv"]
+[ext_resource type="ArrayMesh" uid="uid://chm21qqppwin4" path="res://models/nature/tree_default.obj" id="275_p6ikf"]
+[ext_resource type="ArrayMesh" uid="uid://f0s3tbviyhew" path="res://models/nature/tree_default_dark.obj" id="276_itbq8"]
+[ext_resource type="ArrayMesh" uid="uid://bc5ortg7hwbai" path="res://models/nature/tree_default_fall.obj" id="277_4r5au"]
+[ext_resource type="ArrayMesh" uid="uid://h8em2vfyapwf" path="res://models/nature/tree_detailed.obj" id="278_gbq4j"]
+[ext_resource type="ArrayMesh" uid="uid://qlf1uoso4rng" path="res://models/nature/tree_detailed_dark.obj" id="279_tcio2"]
+[ext_resource type="ArrayMesh" uid="uid://cw10fb5jcm0uj" path="res://models/nature/tree_detailed_fall.obj" id="280_ijqix"]
+[ext_resource type="ArrayMesh" uid="uid://duw18p1f6tc1t" path="res://models/nature/tree_fat.obj" id="281_tujsb"]
+[ext_resource type="ArrayMesh" uid="uid://do41fc2xxqs4d" path="res://models/nature/tree_fat_darkh.obj" id="282_8yxlc"]
+[ext_resource type="ArrayMesh" uid="uid://b2nkkh2sj1ia7" path="res://models/nature/tree_fat_fall.obj" id="283_t18wp"]
+[ext_resource type="ArrayMesh" uid="uid://co1shgeaqktqf" path="res://models/nature/tree_oak.obj" id="284_cpole"]
+[ext_resource type="ArrayMesh" uid="uid://bllj8tkkcihu7" path="res://models/nature/tree_oak_dark.obj" id="285_jmr2l"]
+[ext_resource type="ArrayMesh" uid="uid://h60yfk6auns8" path="res://models/nature/tree_oak_fall.obj" id="286_imt2o"]
+[ext_resource type="ArrayMesh" uid="uid://b054tut7w1en5" path="res://models/nature/tree_palm.obj" id="287_o0g7g"]
+[ext_resource type="ArrayMesh" uid="uid://b48t7oujkm4d2" path="res://models/nature/tree_palmBend.obj" id="288_8rdf0"]
+[ext_resource type="ArrayMesh" uid="uid://yij7y1kq3rcs" path="res://models/nature/tree_palmDetailedShort.obj" id="289_qypgu"]
+[ext_resource type="ArrayMesh" uid="uid://cgjqyral2mqnw" path="res://models/nature/tree_palmDetailedTall.obj" id="290_746yf"]
+[ext_resource type="ArrayMesh" uid="uid://cki1f7mrbptpg" path="res://models/nature/tree_palmShort.obj" id="291_3kuon"]
+[ext_resource type="ArrayMesh" uid="uid://bnt021nl8qt7v" path="res://models/nature/tree_palmTall.obj" id="292_i7k2l"]
+[ext_resource type="ArrayMesh" uid="uid://b4601re1knglj" path="res://models/nature/tree_pineDefaultA.obj" id="293_0fgi8"]
+[ext_resource type="ArrayMesh" uid="uid://dnw8ajsqkkxib" path="res://models/nature/tree_pineDefaultB.obj" id="294_wasg4"]
+[ext_resource type="ArrayMesh" uid="uid://cn7c33pjepbys" path="res://models/nature/tree_pineGroundA.obj" id="295_k7rxt"]
+[ext_resource type="ArrayMesh" uid="uid://csx2kfyyers22" path="res://models/nature/tree_pineGroundB.obj" id="296_2tiwl"]
+[ext_resource type="ArrayMesh" uid="uid://vh3jtsxggqtm" path="res://models/nature/tree_pineRoundA.obj" id="297_sk277"]
+[ext_resource type="ArrayMesh" uid="uid://bbpw0y6nqfan" path="res://models/nature/tree_pineRoundB.obj" id="298_qytw4"]
+[ext_resource type="ArrayMesh" uid="uid://35alqeanfqnk" path="res://models/nature/tree_pineRoundC.obj" id="299_qf5a3"]
+[ext_resource type="ArrayMesh" uid="uid://d3yv5quw2h8y3" path="res://models/nature/tree_pineRoundD.obj" id="300_d5oct"]
+[ext_resource type="ArrayMesh" uid="uid://c5ht5epk65n2e" path="res://models/nature/tree_pineRoundE.obj" id="301_2gva2"]
+[ext_resource type="ArrayMesh" uid="uid://cpkxry5o23qtc" path="res://models/nature/tree_pineRoundF.obj" id="302_2h0r0"]
+[ext_resource type="ArrayMesh" uid="uid://dpqx2wymrjfrb" path="res://models/nature/tree_pineSmallA.obj" id="303_aq47i"]
+[ext_resource type="ArrayMesh" uid="uid://2s5dwaj3d5f1" path="res://models/nature/tree_pineSmallB.obj" id="304_7pqlf"]
+[ext_resource type="ArrayMesh" uid="uid://dm04ebcb2u7rn" path="res://models/nature/tree_pineSmallC.obj" id="305_lv1qb"]
+[ext_resource type="ArrayMesh" uid="uid://b3fkvrvq4vyac" path="res://models/nature/tree_pineSmallD.obj" id="306_rnoc4"]
+[ext_resource type="ArrayMesh" uid="uid://cib5cwk1lpt0v" path="res://models/nature/tree_pineTallA.obj" id="307_mter0"]
+[ext_resource type="ArrayMesh" uid="uid://b1h7xv182i4ig" path="res://models/nature/tree_pineTallA_detailed.obj" id="308_nwh2b"]
+[ext_resource type="ArrayMesh" uid="uid://c0lml61sw6mja" path="res://models/nature/tree_pineTallB.obj" id="309_2nq7y"]
+[ext_resource type="ArrayMesh" uid="uid://dm5wmmb8km2uh" path="res://models/nature/tree_pineTallB_detailed.obj" id="310_ijkue"]
+[ext_resource type="ArrayMesh" uid="uid://cjhyne1a1g1tl" path="res://models/nature/tree_pineTallC.obj" id="311_n0os4"]
+[ext_resource type="ArrayMesh" uid="uid://ccjru0sffqii7" path="res://models/nature/tree_pineTallC_detailed.obj" id="312_tbefv"]
+[ext_resource type="ArrayMesh" uid="uid://c83qnvy8lki6u" path="res://models/nature/tree_pineTallD.obj" id="313_otw5e"]
+[ext_resource type="ArrayMesh" uid="uid://b4gm08jx0t38k" path="res://models/nature/tree_pineTallD_detailed.obj" id="314_rldu0"]
+[ext_resource type="ArrayMesh" uid="uid://bgdicva3r5cf7" path="res://models/nature/tree_plateau.obj" id="315_to46e"]
+[ext_resource type="ArrayMesh" uid="uid://bengcqv2ceisl" path="res://models/nature/tree_plateau_dark.obj" id="316_6fsca"]
+[ext_resource type="ArrayMesh" uid="uid://cqf53xx2m0oxo" path="res://models/nature/tree_plateau_fall.obj" id="317_7kr3r"]
+[ext_resource type="ArrayMesh" uid="uid://ci20ose8qok63" path="res://models/nature/tree_simple.obj" id="318_1dtt4"]
+[ext_resource type="ArrayMesh" uid="uid://br07yjpqcdnk6" path="res://models/nature/tree_simple_dark.obj" id="319_rkrb1"]
+[ext_resource type="ArrayMesh" uid="uid://btasdqdb4h5in" path="res://models/nature/tree_simple_fall.obj" id="320_xoedq"]
+[ext_resource type="ArrayMesh" uid="uid://cvhx36556oeli" path="res://models/nature/tree_small.obj" id="321_mb4e3"]
+[ext_resource type="ArrayMesh" uid="uid://bqto3xsxffb3x" path="res://models/nature/tree_small_dark.obj" id="322_e2a28"]
+[ext_resource type="ArrayMesh" uid="uid://bi5lqv0vqmsth" path="res://models/nature/tree_small_fall.obj" id="323_bpwnt"]
+[ext_resource type="ArrayMesh" uid="uid://ct5wm5jjs38tb" path="res://models/nature/tree_tall.obj" id="324_07c1t"]
+[ext_resource type="ArrayMesh" uid="uid://di0xnrkt8g2e1" path="res://models/nature/tree_tall_dark.obj" id="325_hoboq"]
+[ext_resource type="ArrayMesh" uid="uid://sbscqu5tqvpv" path="res://models/nature/tree_tall_fall.obj" id="326_84tr6"]
+[ext_resource type="ArrayMesh" uid="uid://cohlnyijki20h" path="res://models/nature/tree_thin.obj" id="327_hjxf0"]
+[ext_resource type="ArrayMesh" uid="uid://df6muyqkq8pba" path="res://models/nature/tree_thin_dark.obj" id="328_dg7gh"]
+[ext_resource type="ArrayMesh" uid="uid://daa5gaqtsv6gs" path="res://models/nature/tree_thin_fall.obj" id="329_b1qdg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lx325"]
+points = PackedVector3Array(-0.5, 0, -0.5, -0.5, 0, 0.499995, 0.499995, 0, -0.5, 0.499995, 0, 0.499995)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_xlvr7")
+
+[node name="BedFloor" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_37nds")
+
+[node name="BridgeCenterStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_0e36g")
+
+[node name="BridgeCenterStoneRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_c5qh6")
+
+[node name="BridgeCenterWood" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_n8ehr")
+
+[node name="BridgeCenterWoodRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("6_anyiu")
+
+[node name="BridgeSideStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_guw28")
+
+[node name="BridgeSideStoneRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("8_doidv")
+
+[node name="BridgeSideWood" type="MeshInstance3D" parent="."]
+mesh = ExtResource("9_qriqj")
+
+[node name="BridgeSideWoodRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("10_6rw84")
+
+[node name="BridgeStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("11_6v3co")
+
+[node name="BridgeStoneNarrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("12_d8pee")
+
+[node name="BridgeStoneRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("13_qe2dw")
+
+[node name="BridgeStoneRoundNarrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("14_0e65x")
+
+[node name="BridgeWood" type="MeshInstance3D" parent="."]
+mesh = ExtResource("15_8urcy")
+
+[node name="BridgeWoodNarrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("16_ovhkn")
+
+[node name="BridgeWoodRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("17_eyq1c")
+
+[node name="BridgeWoodRoundNarrow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("18_6oddp")
+
+[node name="CactusShort" type="MeshInstance3D" parent="."]
+mesh = ExtResource("19_olwci")
+
+[node name="CactusTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("20_ocu8c")
+
+[node name="CampfireBricks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("21_h31qr")
+
+[node name="CampfireLogs" type="MeshInstance3D" parent="."]
+mesh = ExtResource("22_jm48m")
+
+[node name="CampfirePlanks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("23_y2yae")
+
+[node name="CampfireStones" type="MeshInstance3D" parent="."]
+mesh = ExtResource("24_4bacy")
+
+[node name="Canoe" type="MeshInstance3D" parent="."]
+mesh = ExtResource("25_g70bq")
+
+[node name="CanoePaddle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("26_jcfok")
+
+[node name="CliffBlockCaveRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("27_mof8e")
+
+[node name="CliffBlockCaveStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("28_if86l")
+
+[node name="CliffBlockDiagonalRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("29_if7g6")
+
+[node name="CliffBlockDiagonalStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("30_ouvq5")
+
+[node name="CliffBlockHalfRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("31_wdlx7")
+
+[node name="CliffBlockHalfStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("32_alu6s")
+
+[node name="CliffBlockQuarterRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("33_qi6th")
+
+[node name="CliffBlockQuarterStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("34_f2fe8")
+
+[node name="CliffBlockSlopeHalfWallsRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("35_eob3h")
+
+[node name="CliffBlockSlopeHalfWallsStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("36_7k15f")
+
+[node name="CliffBlockSlopeWallsRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("37_bf288")
+
+[node name="CliffBlockSlopeWallsStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("38_6bqlx")
+
+[node name="CliffBlockSlopeRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("39_wty6i")
+
+[node name="CliffBlockSlopeStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("40_n8lxk")
+
+[node name="CliffBlockRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("41_cn1lh")
+
+[node name="CliffBlockStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("42_12ybw")
+
+[node name="CliffCaveRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("43_v06kg")
+
+[node name="CliffCaveStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("44_86n0l")
+
+[node name="CliffCornerInnerLargeRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("45_rxhq1")
+
+[node name="CliffCornerInnerLargeStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("46_ua5w8")
+
+[node name="CliffCornerInnerTopRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("47_o163j")
+
+[node name="CliffCornerInnerTopStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("48_0v5ny")
+
+[node name="CliffCornerInnerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("49_atera")
+
+[node name="CliffCornerInnerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("50_rfosu")
+
+[node name="CliffCornerLargeRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("51_8urli")
+
+[node name="CliffCornerLargeStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("52_okyyu")
+
+[node name="CliffCornerTopRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("53_yuwb7")
+
+[node name="CliffCornerTopStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("54_dxpnu")
+
+[node name="CliffCornerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("55_0038b")
+
+[node name="CliffCornerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("56_8fn1s")
+
+[node name="CliffDiagonalRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("57_0reh2")
+
+[node name="CliffDiagonalStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("58_dfgpv")
+
+[node name="CliffHalfCornerInnerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("59_r76u1")
+
+[node name="CliffHalfCornerInnerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("60_fod42")
+
+[node name="CliffHalfCornerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("61_g26ml")
+
+[node name="CliffHalfCornerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("62_nvqwb")
+
+[node name="CliffHalfRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("63_wx1b1")
+
+[node name="CliffHalfStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("64_6cjck")
+
+[node name="CliffLargeRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("65_fjm2a")
+
+[node name="CliffLargeStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("66_uea41")
+
+[node name="CliffRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("67_733e1")
+
+[node name="CliffStepsCornerInnerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("68_xhxft")
+
+[node name="CliffStepsCornerInnerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("69_3ey2s")
+
+[node name="CliffStepsCornerRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("70_hnxmm")
+
+[node name="CliffStepsCornerStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("71_74x3v")
+
+[node name="CliffStepsRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("72_qvkjq")
+
+[node name="CliffStepsStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("73_650we")
+
+[node name="CliffStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("74_nrxot")
+
+[node name="CliffTopDiagonalRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("75_2bg12")
+
+[node name="CliffTopDiagonalStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("76_qr6n4")
+
+[node name="CliffTopRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("77_f0dan")
+
+[node name="CliffTopStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("78_4klov")
+
+[node name="CliffWaterfallTopRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("79_vqdso")
+
+[node name="CliffWaterfallTopStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("80_mxvv8")
+
+[node name="CliffWaterfallRock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("81_chag3")
+
+[node name="CliffWaterfallStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("82_6gdv6")
+
+[node name="CropsBambooStageA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("83_84yts")
+
+[node name="CropsBambooStageB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("84_655k6")
+
+[node name="CropsCornStageA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("85_elagu")
+
+[node name="CropsCornStageB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("86_5dryx")
+
+[node name="CropsCornStageC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("87_aqicf")
+
+[node name="CropsCornStageD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("88_8t1x7")
+
+[node name="CropsDirtDoubleRow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("89_dhchq")
+
+[node name="CropsDirtDoubleRowCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("90_027bw")
+
+[node name="CropsDirtDoubleRowEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("91_23mo6")
+
+[node name="CropsDirtRow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("92_jvdst")
+
+[node name="CropsDirtRowCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("93_7qxin")
+
+[node name="CropsDirtRowEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("94_p3ui5")
+
+[node name="CropsDirtSingle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("95_rr4g4")
+
+[node name="CropsLeafsStageA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("96_schpj")
+
+[node name="CropsLeafsStageB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("97_own0p")
+
+[node name="CropsWheatStageA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("98_kq0aq")
+
+[node name="CropsWheatStageB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("99_jnrub")
+
+[node name="CropCarrot" type="MeshInstance3D" parent="."]
+mesh = ExtResource("100_146ry")
+
+[node name="CropMelon" type="MeshInstance3D" parent="."]
+mesh = ExtResource("101_8kp8w")
+
+[node name="CropPumpkin" type="MeshInstance3D" parent="."]
+mesh = ExtResource("102_6jbbd")
+
+[node name="CropTurnip" type="MeshInstance3D" parent="."]
+mesh = ExtResource("103_va5jc")
+
+[node name="FenceBend" type="MeshInstance3D" parent="."]
+mesh = ExtResource("104_fj3y2")
+
+[node name="FenceBendCenter" type="MeshInstance3D" parent="."]
+mesh = ExtResource("105_7ntnc")
+
+[node name="FenceCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("106_rt6tt")
+
+[node name="FenceGate" type="MeshInstance3D" parent="."]
+mesh = ExtResource("107_smt8k")
+
+[node name="FencePlanks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("108_yw6cs")
+
+[node name="FencePlanksDouble" type="MeshInstance3D" parent="."]
+mesh = ExtResource("109_4q5m0")
+
+[node name="FenceSimple" type="MeshInstance3D" parent="."]
+mesh = ExtResource("110_2li7x")
+
+[node name="FenceSimpleCenter" type="MeshInstance3D" parent="."]
+mesh = ExtResource("111_ninom")
+
+[node name="FenceSimpleDiagonal" type="MeshInstance3D" parent="."]
+mesh = ExtResource("112_7bc7o")
+
+[node name="FenceSimpleDiagonalCenter" type="MeshInstance3D" parent="."]
+mesh = ExtResource("113_cawvo")
+
+[node name="FenceSimpleHigh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("114_4w4eg")
+
+[node name="FenceSimpleLow" type="MeshInstance3D" parent="."]
+mesh = ExtResource("115_ybp58")
+
+[node name="FlowerPurpleA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("116_ioo4g")
+
+[node name="FlowerPurpleB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("117_qyueq")
+
+[node name="FlowerPurpleC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("118_b0w0k")
+
+[node name="FlowerRedA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("119_bgsu4")
+
+[node name="FlowerRedB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("120_o15yf")
+
+[node name="FlowerRedC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("121_hna5n")
+
+[node name="FlowerYellowA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("122_yg6e8")
+
+[node name="FlowerYellowB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("123_au6hn")
+
+[node name="FlowerYellowC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("124_kjf8m")
+
+[node name="Grass" type="MeshInstance3D" parent="."]
+mesh = ExtResource("125_okix2")
+
+[node name="GrassLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("126_taiqi")
+
+[node name="GrassLeafs" type="MeshInstance3D" parent="."]
+mesh = ExtResource("127_rwjhk")
+
+[node name="GrassLeafsLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("128_6d836")
+
+[node name="GroundGrass" type="MeshInstance3D" parent="."]
+mesh = ExtResource("129_4nw25")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundGrass"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundGrass/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_lx325")
+
+[node name="GroundPathBend" type="MeshInstance3D" parent="."]
+mesh = ExtResource("130_iod4e")
+
+[node name="GroundPathBendBank" type="MeshInstance3D" parent="."]
+mesh = ExtResource("131_0tdlh")
+
+[node name="GroundPathCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("132_ervoy")
+
+[node name="GroundPathCornerSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("133_4ogkm")
+
+[node name="GroundPathCross" type="MeshInstance3D" parent="."]
+mesh = ExtResource("134_pw540")
+
+[node name="GroundPathEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("135_u0jj7")
+
+[node name="GroundPathEndClosed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("136_f4pgq")
+
+[node name="GroundPathOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("137_5jnkt")
+
+[node name="GroundPathRocks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("138_nlvyc")
+
+[node name="GroundPathSide" type="MeshInstance3D" parent="."]
+mesh = ExtResource("139_csqfj")
+
+[node name="GroundPathSideOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("140_2alei")
+
+[node name="GroundPathSplit" type="MeshInstance3D" parent="."]
+mesh = ExtResource("141_751uq")
+
+[node name="GroundPathStraight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("142_e33u8")
+
+[node name="GroundPathTile" type="MeshInstance3D" parent="."]
+mesh = ExtResource("143_xv882")
+
+[node name="GroundRiverBend" type="MeshInstance3D" parent="."]
+mesh = ExtResource("144_8be13")
+
+[node name="GroundRiverBendBank" type="MeshInstance3D" parent="."]
+mesh = ExtResource("145_gm6po")
+
+[node name="GroundRiverCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("146_4nbsa")
+
+[node name="GroundRiverCornerSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("147_wig7t")
+
+[node name="GroundRiverCross" type="MeshInstance3D" parent="."]
+mesh = ExtResource("148_y38f8")
+
+[node name="GroundRiverEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("149_hshc1")
+
+[node name="GroundRiverEndClosed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("150_uc58i")
+
+[node name="GroundRiverOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("151_4vo0k")
+
+[node name="GroundRiverRocks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("152_itoqe")
+
+[node name="GroundRiverSide" type="MeshInstance3D" parent="."]
+mesh = ExtResource("153_ua5sl")
+
+[node name="GroundRiverSideOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("154_kpqr4")
+
+[node name="GroundRiverSplit" type="MeshInstance3D" parent="."]
+mesh = ExtResource("155_paox2")
+
+[node name="GroundRiverStraight" type="MeshInstance3D" parent="."]
+mesh = ExtResource("156_b0xaw")
+
+[node name="GroundRiverTile" type="MeshInstance3D" parent="."]
+mesh = ExtResource("157_k4i3k")
+
+[node name="HangingMoss" type="MeshInstance3D" parent="."]
+mesh = ExtResource("158_oj7el")
+
+[node name="LilyLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("159_e5nen")
+
+[node name="LilySmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("160_queun")
+
+[node name="Log" type="MeshInstance3D" parent="."]
+mesh = ExtResource("161_t3be2")
+
+[node name="LogLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("162_awk6q")
+
+[node name="LogStack" type="MeshInstance3D" parent="."]
+mesh = ExtResource("163_0gvf2")
+
+[node name="LogStackLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("164_qu506")
+
+[node name="MushroomRed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("165_426qc")
+
+[node name="MushroomRedGroup" type="MeshInstance3D" parent="."]
+mesh = ExtResource("166_416up")
+
+[node name="MushroomRedTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("167_g2mo3")
+
+[node name="MushroomTan" type="MeshInstance3D" parent="."]
+mesh = ExtResource("168_hirob")
+
+[node name="MushroomTanGroup" type="MeshInstance3D" parent="."]
+mesh = ExtResource("169_esl7e")
+
+[node name="MushroomTanTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("170_wfkgx")
+
+[node name="PathStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("171_tagkg")
+
+[node name="PathStoneCircle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("172_016q3")
+
+[node name="PathStoneCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("173_ikf42")
+
+[node name="PathStoneEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("174_vfly2")
+
+[node name="PathWood" type="MeshInstance3D" parent="."]
+mesh = ExtResource("175_kp4ej")
+
+[node name="PathWoodCorner" type="MeshInstance3D" parent="."]
+mesh = ExtResource("176_drff2")
+
+[node name="PathWoodEnd" type="MeshInstance3D" parent="."]
+mesh = ExtResource("177_rxrcs")
+
+[node name="PlantBush" type="MeshInstance3D" parent="."]
+mesh = ExtResource("178_iyxxs")
+
+[node name="PlantBushDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("179_cdjjp")
+
+[node name="PlantBushLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("180_tk63q")
+
+[node name="PlantBushLargeTriangle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("181_nd48r")
+
+[node name="PlantBushSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("182_vveq8")
+
+[node name="PlantBushTriangle" type="MeshInstance3D" parent="."]
+mesh = ExtResource("183_jlpid")
+
+[node name="PlantFlatShort" type="MeshInstance3D" parent="."]
+mesh = ExtResource("184_npwqc")
+
+[node name="PlantFlatTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("185_rdpsx")
+
+[node name="PlatformBeach" type="MeshInstance3D" parent="."]
+mesh = ExtResource("186_aopop")
+
+[node name="PlatformGrass" type="MeshInstance3D" parent="."]
+mesh = ExtResource("187_0u2xv")
+
+[node name="PlatformStone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("188_64b6a")
+
+[node name="PotLarge" type="MeshInstance3D" parent="."]
+mesh = ExtResource("189_c2hlr")
+
+[node name="PotSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("190_bjkop")
+
+[node name="RockLargeA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("191_uo5ln")
+
+[node name="RockLargeB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("192_eqwcb")
+
+[node name="RockLargeC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("193_ow7qa")
+
+[node name="RockLargeD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("194_vmxo7")
+
+[node name="RockLargeE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("195_ctx5b")
+
+[node name="RockLargeF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("196_n4c0t")
+
+[node name="RockSmallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("197_bwhpy")
+
+[node name="RockSmallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("198_y3ylj")
+
+[node name="RockSmallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("199_nc36s")
+
+[node name="RockSmallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("200_q7vx3")
+
+[node name="RockSmallE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("201_2fn2p")
+
+[node name="RockSmallF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("202_70uu5")
+
+[node name="RockSmallFlatA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("203_hox7h")
+
+[node name="RockSmallFlatB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("204_886m1")
+
+[node name="RockSmallFlatC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("205_6pj6s")
+
+[node name="RockSmallG" type="MeshInstance3D" parent="."]
+mesh = ExtResource("206_3x8mc")
+
+[node name="RockSmallH" type="MeshInstance3D" parent="."]
+mesh = ExtResource("207_cvrn1")
+
+[node name="RockSmallI" type="MeshInstance3D" parent="."]
+mesh = ExtResource("208_8qnf3")
+
+[node name="RockSmallTopA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("209_u3iyx")
+
+[node name="RockSmallTopB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("210_l2v3r")
+
+[node name="RockTallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("211_38hpx")
+
+[node name="RockTallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("212_6u5yd")
+
+[node name="RockTallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("213_p3f0q")
+
+[node name="RockTallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("214_8jbjr")
+
+[node name="RockTallE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("215_76wi8")
+
+[node name="RockTallF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("216_hq6on")
+
+[node name="RockTallG" type="MeshInstance3D" parent="."]
+mesh = ExtResource("217_xtmja")
+
+[node name="RockTallH" type="MeshInstance3D" parent="."]
+mesh = ExtResource("218_o8apd")
+
+[node name="RockTallI" type="MeshInstance3D" parent="."]
+mesh = ExtResource("219_tk8op")
+
+[node name="RockTallJ" type="MeshInstance3D" parent="."]
+mesh = ExtResource("220_2gqa4")
+
+[node name="Sign" type="MeshInstance3D" parent="."]
+mesh = ExtResource("221_hb063")
+
+[node name="StatueBlock" type="MeshInstance3D" parent="."]
+mesh = ExtResource("222_65wh8")
+
+[node name="StatueColumn" type="MeshInstance3D" parent="."]
+mesh = ExtResource("223_xcgut")
+
+[node name="StatueColumnDamaged" type="MeshInstance3D" parent="."]
+mesh = ExtResource("224_it3vd")
+
+[node name="StatueHead" type="MeshInstance3D" parent="."]
+mesh = ExtResource("225_04mdm")
+
+[node name="StatueObelisk" type="MeshInstance3D" parent="."]
+mesh = ExtResource("226_n1xmc")
+
+[node name="StatueRing" type="MeshInstance3D" parent="."]
+mesh = ExtResource("227_5bfot")
+
+[node name="StoneLargeA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("228_d2vnt")
+
+[node name="StoneLargeB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("229_a8mc4")
+
+[node name="StoneLargeC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("230_vecs6")
+
+[node name="StoneLargeD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("231_ldkn4")
+
+[node name="StoneLargeE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("232_dh2gf")
+
+[node name="StoneLargeF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("233_m14aa")
+
+[node name="StoneSmallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("234_84sw4")
+
+[node name="StoneSmallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("235_jwsvn")
+
+[node name="StoneSmallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("236_g6huk")
+
+[node name="StoneSmallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("237_ecapv")
+
+[node name="StoneSmallE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("238_c3yxu")
+
+[node name="StoneSmallF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("239_mjj35")
+
+[node name="StoneSmallFlatA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("240_wlv1o")
+
+[node name="StoneSmallFlatB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("241_ol23n")
+
+[node name="StoneSmallFlatC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("242_ie2pp")
+
+[node name="StoneSmallG" type="MeshInstance3D" parent="."]
+mesh = ExtResource("243_4aqwu")
+
+[node name="StoneSmallH" type="MeshInstance3D" parent="."]
+mesh = ExtResource("244_r0nw6")
+
+[node name="StoneSmallI" type="MeshInstance3D" parent="."]
+mesh = ExtResource("245_a6b11")
+
+[node name="StoneSmallTopA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("246_e1u0s")
+
+[node name="StoneSmallTopB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("247_7alv6")
+
+[node name="StoneTallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("248_3rm62")
+
+[node name="StoneTallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("249_p8jqu")
+
+[node name="StoneTallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("250_2gi22")
+
+[node name="StoneTallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("251_6n4kt")
+
+[node name="StoneTallE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("252_3uey0")
+
+[node name="StoneTallF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("253_k6pct")
+
+[node name="StoneTallG" type="MeshInstance3D" parent="."]
+mesh = ExtResource("254_qw7hc")
+
+[node name="StoneTallH" type="MeshInstance3D" parent="."]
+mesh = ExtResource("255_g3uqt")
+
+[node name="StoneTallI" type="MeshInstance3D" parent="."]
+mesh = ExtResource("256_iy1gr")
+
+[node name="StoneTallJ" type="MeshInstance3D" parent="."]
+mesh = ExtResource("257_5kr6b")
+
+[node name="StumpOld" type="MeshInstance3D" parent="."]
+mesh = ExtResource("258_cei8x")
+
+[node name="StumpOldTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("259_m30y0")
+
+[node name="StumpRound" type="MeshInstance3D" parent="."]
+mesh = ExtResource("260_70o0j")
+
+[node name="StumpRoundDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("261_unkvl")
+
+[node name="StumpSquare" type="MeshInstance3D" parent="."]
+mesh = ExtResource("262_ey1es")
+
+[node name="StumpSquareDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("263_rsuah")
+
+[node name="StumpSquareDetailedWide" type="MeshInstance3D" parent="."]
+mesh = ExtResource("264_2hmxo")
+
+[node name="TentDetailedClosed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("265_v5hbm")
+
+[node name="TentDetailedOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("266_8jjm5")
+
+[node name="TentSmallClosed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("267_021ay")
+
+[node name="TentSmallOpen" type="MeshInstance3D" parent="."]
+mesh = ExtResource("268_kubgs")
+
+[node name="TreeBlocks" type="MeshInstance3D" parent="."]
+mesh = ExtResource("269_7py6q")
+
+[node name="TreeBlocksDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("270_isan8")
+
+[node name="TreeBlocksFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("271_xwdun")
+
+[node name="TreeCone" type="MeshInstance3D" parent="."]
+mesh = ExtResource("272_s1yk0")
+
+[node name="TreeConeDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("273_oi0yl")
+
+[node name="TreeConeFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("274_e3ufv")
+
+[node name="TreeDefault" type="MeshInstance3D" parent="."]
+mesh = ExtResource("275_p6ikf")
+
+[node name="TreeDefaultDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("276_itbq8")
+
+[node name="TreeDefaultFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("277_4r5au")
+
+[node name="TreeDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("278_gbq4j")
+
+[node name="TreeDetailedDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("279_tcio2")
+
+[node name="TreeDetailedFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("280_ijqix")
+
+[node name="TreeFat" type="MeshInstance3D" parent="."]
+mesh = ExtResource("281_tujsb")
+
+[node name="TreeFatDarkh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("282_8yxlc")
+
+[node name="TreeFatFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("283_t18wp")
+
+[node name="TreeOak" type="MeshInstance3D" parent="."]
+mesh = ExtResource("284_cpole")
+
+[node name="TreeOakDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("285_jmr2l")
+
+[node name="TreeOakFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("286_imt2o")
+
+[node name="TreePalm" type="MeshInstance3D" parent="."]
+mesh = ExtResource("287_o0g7g")
+
+[node name="TreePalmBend" type="MeshInstance3D" parent="."]
+mesh = ExtResource("288_8rdf0")
+
+[node name="TreePalmDetailedShort" type="MeshInstance3D" parent="."]
+mesh = ExtResource("289_qypgu")
+
+[node name="TreePalmDetailedTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("290_746yf")
+
+[node name="TreePalmShort" type="MeshInstance3D" parent="."]
+mesh = ExtResource("291_3kuon")
+
+[node name="TreePalmTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("292_i7k2l")
+
+[node name="TreePineDefaultA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("293_0fgi8")
+
+[node name="TreePineDefaultB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("294_wasg4")
+
+[node name="TreePineGroundA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("295_k7rxt")
+
+[node name="TreePineGroundB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("296_2tiwl")
+
+[node name="TreePineRoundA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("297_sk277")
+
+[node name="TreePineRoundB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("298_qytw4")
+
+[node name="TreePineRoundC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("299_qf5a3")
+
+[node name="TreePineRoundD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("300_d5oct")
+
+[node name="TreePineRoundE" type="MeshInstance3D" parent="."]
+mesh = ExtResource("301_2gva2")
+
+[node name="TreePineRoundF" type="MeshInstance3D" parent="."]
+mesh = ExtResource("302_2h0r0")
+
+[node name="TreePineSmallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("303_aq47i")
+
+[node name="TreePineSmallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("304_7pqlf")
+
+[node name="TreePineSmallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("305_lv1qb")
+
+[node name="TreePineSmallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("306_rnoc4")
+
+[node name="TreePineTallA" type="MeshInstance3D" parent="."]
+mesh = ExtResource("307_mter0")
+
+[node name="TreePineTallADetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("308_nwh2b")
+
+[node name="TreePineTallB" type="MeshInstance3D" parent="."]
+mesh = ExtResource("309_2nq7y")
+
+[node name="TreePineTallBDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("310_ijkue")
+
+[node name="TreePineTallC" type="MeshInstance3D" parent="."]
+mesh = ExtResource("311_n0os4")
+
+[node name="TreePineTallCDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("312_tbefv")
+
+[node name="TreePineTallD" type="MeshInstance3D" parent="."]
+mesh = ExtResource("313_otw5e")
+
+[node name="TreePineTallDDetailed" type="MeshInstance3D" parent="."]
+mesh = ExtResource("314_rldu0")
+
+[node name="TreePlateau" type="MeshInstance3D" parent="."]
+mesh = ExtResource("315_to46e")
+
+[node name="TreePlateauDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("316_6fsca")
+
+[node name="TreePlateauFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("317_7kr3r")
+
+[node name="TreeSimple" type="MeshInstance3D" parent="."]
+mesh = ExtResource("318_1dtt4")
+
+[node name="TreeSimpleDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("319_rkrb1")
+
+[node name="TreeSimpleFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("320_xoedq")
+
+[node name="TreeSmall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("321_mb4e3")
+
+[node name="TreeSmallDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("322_e2a28")
+
+[node name="TreeSmallFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("323_bpwnt")
+
+[node name="TreeTall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("324_07c1t")
+
+[node name="TreeTallDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("325_hoboq")
+
+[node name="TreeTallFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("326_84tr6")
+
+[node name="TreeThin" type="MeshInstance3D" parent="."]
+mesh = ExtResource("327_hjxf0")
+
+[node name="TreeThinDark" type="MeshInstance3D" parent="."]
+mesh = ExtResource("328_dg7gh")
+
+[node name="TreeThinFall" type="MeshInstance3D" parent="."]
+mesh = ExtResource("329_b1qdg")

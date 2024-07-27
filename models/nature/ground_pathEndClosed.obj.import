@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://i0x5qsv8m5ne"
+path="res://.godot/imported/ground_pathEndClosed.obj-2e443e1e6262a53f5fa3cad70327b85c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathEndClosed.obj-2e443e1e6262a53f5fa3cad70327b85c.mesh"]
+
+source_file="res://models/nature/ground_pathEndClosed.obj"
+dest_files=["res://.godot/imported/ground_pathEndClosed.obj-2e443e1e6262a53f5fa3cad70327b85c.mesh", "res://.godot/imported/ground_pathEndClosed.obj-2e443e1e6262a53f5fa3cad70327b85c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://qieg46nckoo3"
+path="res://.godot/imported/rock_smallTopA.obj-a2d34b80f4a789afd945b3543c2487ab.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_smallTopA.obj-a2d34b80f4a789afd945b3543c2487ab.mesh"]
+
+source_file="res://models/nature/rock_smallTopA.obj"
+dest_files=["res://.godot/imported/rock_smallTopA.obj-a2d34b80f4a789afd945b3543c2487ab.mesh", "res://.godot/imported/rock_smallTopA.obj-a2d34b80f4a789afd945b3543c2487ab.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
