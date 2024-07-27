@@ -1,4 +1,4 @@
-[gd_scene load_steps=331 format=3 uid="uid://ceoaqwfein7yp"]
+[gd_scene load_steps=333 format=3 uid="uid://ceoaqwfein7yp"]
 
 [ext_resource type="ArrayMesh" uid="uid://bxq577b1bh263" path="res://models/nature/bed.obj" id="1_xlvr7"]
 [ext_resource type="ArrayMesh" uid="uid://b4eveycq3r3sv" path="res://models/nature/bed_floor.obj" id="2_37nds"]
@@ -332,6 +332,12 @@
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lx325"]
 points = PackedVector3Array(-0.5, 0, -0.5, -0.5, 0, 0.499995, 0.499995, 0, -0.5, 0.499995, 0, 0.499995)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f6n36"]
+points = PackedVector3Array(0.499995, -0.05, 0.5, -0.5, -0.05, 0.5, 0.499995, -0.05, -0.5, -0.5, -0.05, -0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_asx0h"]
+points = PackedVector3Array(-0.5, -0.05, -0.5, -0.5, -0.05, 0.216915, -0.5, -4.89503e-06, 0.278974, 0.5, -0.05, -0.5, -0.5, 0, 0.5, -0.125098, -0.05, 0.278974, -0.5, 0, 0.378915, 0.5, -4.89503e-06, 0.278974, 0.5, -0.05, 0.216915, 0.5, 0, 0.5, 0.124902, -0.05, 0.278974, 0.5, 0, 0.378915)
 
 [node name="Node3D" type="Node3D"]
 
@@ -751,11 +757,21 @@ mesh = ExtResource("136_f4pgq")
 [node name="GroundPathOpen" type="MeshInstance3D" parent="."]
 mesh = ExtResource("137_5jnkt")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathOpen"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathOpen/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_f6n36")
+
 [node name="GroundPathRocks" type="MeshInstance3D" parent="."]
 mesh = ExtResource("138_nlvyc")
 
 [node name="GroundPathSide" type="MeshInstance3D" parent="."]
 mesh = ExtResource("139_csqfj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathSide"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathSide/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_asx0h")
 
 [node name="GroundPathSideOpen" type="MeshInstance3D" parent="."]
 mesh = ExtResource("140_2alei")
