@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dl2ed4gkybggf"]
+[gd_scene load_steps=15 format=3 uid="uid://dl2ed4gkybggf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ffboj"]
 [ext_resource type="PackedScene" uid="uid://cbkrdpmlt2t8g" path="res://models/noko/noko.glb" id="2_1qy1v"]
@@ -11,6 +11,10 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gdq8c"]
 radius = 0.25
 height = 2.25
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_udxjm"]
+radius = 0.25
+height = 8.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qldxc"]
 resource_name = "Horn"
@@ -493,23 +497,18 @@ proximity_fade_distance = 0.25
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.249284, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fqqe8"]
-radius = 0.25
-height = 1.0
-
-[sub_resource type="PrismMesh" id="PrismMesh_tfg7s"]
-size = Vector3(0.5, 1, 0.5)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_udxjm"]
-radius = 0.25
-height = 1.0
-
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_ffboj")
 
 [node name="Collider" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.125, 0)
 shape = SubResource("CapsuleShape3D_gdq8c")
+
+[node name="AntlersArea" type="Area3D" parent="."]
+
+[node name="Collider" type="CollisionShape3D" parent="AntlersArea"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 2.125, 0)
+shape = SubResource("CapsuleShape3D_udxjm")
 
 [node name="Model" parent="." instance=ExtResource("2_1qy1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.125)
@@ -602,30 +601,6 @@ stream = ExtResource("5_ics1s")
 volume_db = -5.0
 pitch_scale = 1.25
 autoplay = true
-
-[node name="AntlerRight" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 0)
-visible = false
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AntlerRight"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-shape = SubResource("CapsuleShape3D_fqqe8")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="AntlerRight"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-mesh = SubResource("PrismMesh_tfg7s")
-
-[node name="AntlerLeft" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0)
-visible = false
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AntlerLeft"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-shape = SubResource("CapsuleShape3D_udxjm")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="AntlerLeft"]
-transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 0, 0, 0)
-mesh = SubResource("PrismMesh_tfg7s")
 
 [editable path="Model"]
 [editable path="Character"]
