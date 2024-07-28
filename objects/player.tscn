@@ -270,40 +270,42 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, -0.125, -2.25, 0)
 
 [node name="Area3D" type="Area3D" parent="Model/Rig/Skeleton3D/HornLeft" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 2.25, -0.125)
+collision_layer = 32
+collision_mask = 192
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Model/Rig/Skeleton3D/HornLeft/Area3D"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_cgi3v")
 
-[node name="HornLeft2" parent="Model/Rig/Skeleton3D/HornLeft" index="1" instance=ExtResource("4_b7x4l")]
+[node name="2" parent="Model/Rig/Skeleton3D/HornLeft" index="1" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft3" parent="Model/Rig/Skeleton3D/HornLeft" index="2" instance=ExtResource("4_b7x4l")]
+[node name="3" parent="Model/Rig/Skeleton3D/HornLeft" index="2" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft4" parent="Model/Rig/Skeleton3D/HornLeft" index="3" instance=ExtResource("4_b7x4l")]
+[node name="4" parent="Model/Rig/Skeleton3D/HornLeft" index="3" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft5" parent="Model/Rig/Skeleton3D/HornLeft" index="4" instance=ExtResource("4_b7x4l")]
+[node name="5" parent="Model/Rig/Skeleton3D/HornLeft" index="4" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft6" parent="Model/Rig/Skeleton3D/HornLeft" index="5" instance=ExtResource("4_b7x4l")]
+[node name="6" parent="Model/Rig/Skeleton3D/HornLeft" index="5" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.625, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft7" parent="Model/Rig/Skeleton3D/HornLeft" index="6" instance=ExtResource("4_b7x4l")]
+[node name="7" parent="Model/Rig/Skeleton3D/HornLeft" index="6" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft8" parent="Model/Rig/Skeleton3D/HornLeft" index="7" instance=ExtResource("4_b7x4l")]
+[node name="8" parent="Model/Rig/Skeleton3D/HornLeft" index="7" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.875, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornLeft9" parent="Model/Rig/Skeleton3D/HornLeft" index="8" instance=ExtResource("4_b7x4l")]
+[node name="9" parent="Model/Rig/Skeleton3D/HornLeft" index="8" instance=ExtResource("4_b7x4l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 skeleton = NodePath("../..")
 
@@ -312,40 +314,42 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, 0.125, -2.25, 0)
 
 [node name="Area3D" type="Area3D" parent="Model/Rig/Skeleton3D/HornRight" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.375, 2.25, -0.125)
+collision_layer = 32
+collision_mask = 192
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Model/Rig/Skeleton3D/HornRight/Area3D"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("CylinderShape3D_ornpo")
 
-[node name="HornRight2" parent="Model/Rig/Skeleton3D/HornRight" index="1" instance=ExtResource("5_3y85v")]
+[node name="2" parent="Model/Rig/Skeleton3D/HornRight" index="1" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight3" parent="Model/Rig/Skeleton3D/HornRight" index="2" instance=ExtResource("5_3y85v")]
+[node name="3" parent="Model/Rig/Skeleton3D/HornRight" index="2" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight4" parent="Model/Rig/Skeleton3D/HornRight" index="3" instance=ExtResource("5_3y85v")]
+[node name="4" parent="Model/Rig/Skeleton3D/HornRight" index="3" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.375, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight5" parent="Model/Rig/Skeleton3D/HornRight" index="4" instance=ExtResource("5_3y85v")]
+[node name="5" parent="Model/Rig/Skeleton3D/HornRight" index="4" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight6" parent="Model/Rig/Skeleton3D/HornRight" index="5" instance=ExtResource("5_3y85v")]
+[node name="6" parent="Model/Rig/Skeleton3D/HornRight" index="5" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight7" parent="Model/Rig/Skeleton3D/HornRight" index="6" instance=ExtResource("5_3y85v")]
+[node name="7" parent="Model/Rig/Skeleton3D/HornRight" index="6" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight8" parent="Model/Rig/Skeleton3D/HornRight" index="7" instance=ExtResource("5_3y85v")]
+[node name="8" parent="Model/Rig/Skeleton3D/HornRight" index="7" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.875, 0, 0)
 skeleton = NodePath("../..")
 
-[node name="HornRight9" parent="Model/Rig/Skeleton3D/HornRight" index="8" instance=ExtResource("5_3y85v")]
+[node name="9" parent="Model/Rig/Skeleton3D/HornRight" index="8" instance=ExtResource("5_3y85v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 skeleton = NodePath("../..")
 
