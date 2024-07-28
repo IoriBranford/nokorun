@@ -7,7 +7,7 @@ signal coin_collected
 
 @export_subgroup("Properties")
 @export var movement_speed = 1000
-@export var jump_strength = 7
+@export var jump_strength = 10
 @export var autorun = false
 
 var movement_velocity: Vector3
