@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 signal coin_collected
+signal enemy_killed
 
 @export_subgroup("Components")
 @export var view: Node3D
@@ -27,6 +28,23 @@ var coins = 0
 @onready var animation = $Character/AnimationPlayer
 
 # Functions
+
+func horn_body_entered(body):
+	if body is Enemy:
+		if body.try_kill():
+			enemy_killed.emit(body)
+
+func connect_horns(rootHorn: MeshInstance3D):
+	var area: Area3D = rootHorn.get_node("Area3D")
+	area.connect("body_entered", horn_body_entered)
+	for i in range(2, 10):
+		var horn = rootHorn.get_node(str(i))
+		area = horn.get_node("Area3D")
+		area.connect("body_entered", horn_body_entered)
+
+func _ready():
+	connect_horns($Model/Rig/Skeleton3D/HornLeft)
+	connect_horns($Model/Rig/Skeleton3D/HornRight)
 
 func _physics_process(delta):
 	
