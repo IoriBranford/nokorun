@@ -20,6 +20,9 @@ func _physics_process(delta):
 
 func try_kill():
 	if alive:
+		set_collision_layer_value(CollisionLayer.ENEMY_BODY, false)
+		$RayCast3D.enabled = false
+		$RayCast3D.visible = false
 		alive = false
 		animationPlayer.play("dead2")
 		velocity = Vector3.BACK * KNOCKBACK_FORCE
