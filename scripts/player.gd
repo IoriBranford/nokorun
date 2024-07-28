@@ -6,7 +6,7 @@ signal coin_collected
 @export var view: Node3D
 
 @export_subgroup("Properties")
-@export var movement_speed = 250
+@export var movement_speed = 1000
 @export var jump_strength = 7
 @export var autorun = false
 
