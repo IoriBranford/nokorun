@@ -31,8 +31,8 @@ func _physics_process(delta):
 	
 	# Set position and rotation to targets
 	
-	self.position = self.position.lerp(target.position + target_offset, delta * 4)
-	rotation_degrees = rotation_degrees.lerp(camera_rotation, delta * 6)
+	self.position = target.position + target_offset # self.position.lerp(target.position + target_offset, delta * 4)
+	rotation_degrees = camera_rotation # rotation_degrees.lerp(camera_rotation, delta * 6)
 	
 	camera.position = camera.position.lerp(Vector3(0, 0, zoom), 8 * delta)
 	
