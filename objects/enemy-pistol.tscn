@@ -1,10 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwt74xbm0empv"]
+[gd_scene load_steps=6 format=3 uid="uid://dwt74xbm0empv"]
 
 [ext_resource type="Script" path="res://objects/enemy.gd" id="1_6ofdg"]
 [ext_resource type="PackedScene" uid="uid://b27cw18rm2t1s" path="res://models/blake/blake.glb" id="2_mlayj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p7srn"]
 radius = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjm4a"]
+albedo_color = Color(1, 0, 0, 1)
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tv1p1"]
+material = SubResource("StandardMaterial3D_xjm4a")
+size = Vector3(0.05, 0.05, 1)
 
 [node name="enemy-pistol" type="CharacterBody3D"]
 collision_layer = 64
@@ -136,9 +145,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_p7srn")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.675, 0)
-target_position = Vector3(0, 0, 10)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 16, 0, 1.5, 1)
+target_position = Vector3(0, 0, 1)
 collision_mask = 48
 collide_with_areas = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RayCast3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+mesh = SubResource("BoxMesh_tv1p1")
 
 [editable path="model"]
