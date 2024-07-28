@@ -101,6 +101,14 @@ zoom_out={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="WorldBody"
+3d_physics/layer_5="PlayerBody"
+3d_physics/layer_6="PlayerWeapon"
+3d_physics/layer_7="EnemyBody"
+3d_physics/layer_8="EnemyWeapon"
+
 [rendering]
 
 anti_aliasing/quality/screen_space_aa=1
