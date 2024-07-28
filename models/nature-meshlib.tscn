@@ -1,4 +1,4 @@
-[gd_scene load_steps=333 format=3 uid="uid://ceoaqwfein7yp"]
+[gd_scene load_steps=332 format=3 uid="uid://ceoaqwfein7yp"]
 
 [ext_resource type="ArrayMesh" uid="uid://bxq577b1bh263" path="res://models/nature/bed.obj" id="1_xlvr7"]
 [ext_resource type="ArrayMesh" uid="uid://b4eveycq3r3sv" path="res://models/nature/bed_floor.obj" id="2_37nds"]
@@ -329,9 +329,6 @@
 [ext_resource type="ArrayMesh" uid="uid://cohlnyijki20h" path="res://models/nature/tree_thin.obj" id="327_hjxf0"]
 [ext_resource type="ArrayMesh" uid="uid://df6muyqkq8pba" path="res://models/nature/tree_thin_dark.obj" id="328_dg7gh"]
 [ext_resource type="ArrayMesh" uid="uid://daa5gaqtsv6gs" path="res://models/nature/tree_thin_fall.obj" id="329_b1qdg"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lx325"]
-points = PackedVector3Array(-0.5, 0, -0.5, -0.5, 0, 0.499995, 0.499995, 0, -0.5, 0.499995, 0, 0.499995)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f6n36"]
 points = PackedVector3Array(0.499995, -0.05, 0.5, -0.5, -0.05, 0.5, 0.499995, -0.05, -0.5, -0.5, -0.05, -0.5)
@@ -728,11 +725,6 @@ mesh = ExtResource("128_6d836")
 [node name="GroundGrass" type="MeshInstance3D" parent="."]
 mesh = ExtResource("129_4nw25")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="GroundGrass"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundGrass/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_lx325")
-
 [node name="GroundPathBend" type="MeshInstance3D" parent="."]
 mesh = ExtResource("130_iod4e")
 
@@ -758,6 +750,7 @@ mesh = ExtResource("136_f4pgq")
 mesh = ExtResource("137_5jnkt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="GroundPathOpen"]
+collision_mask = 80
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathOpen/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_f6n36")
@@ -769,12 +762,16 @@ mesh = ExtResource("138_nlvyc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
 mesh = ExtResource("139_csqfj")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathSide"]
+[node name="FloorStaticBody3D" type="StaticBody3D" parent="GroundPathSide"]
+collision_mask = 80
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathSide/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathSide/FloorStaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_f6n36")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="GroundPathSide/StaticBody3D"]
+[node name="WallStaticBody3D" type="StaticBody3D" parent="GroundPathSide"]
+collision_mask = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathSide/WallStaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.375)
 shape = SubResource("BoxShape3D_o01lw")
 
