@@ -1,9 +1,11 @@
 class_name Enemy
-extends Node3D
+extends CharacterBody3D
 
 @onready var animationPlayer = $model/AnimationPlayer
 
 var alive = true
+
+const KNOCKBACK_FORCE = 50.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,10 +13,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	pass
+	if not alive:
+		if velocity.length_squared() >= 1:
+			velocity += Vector3.FORWARD * KNOCKBACK_FORCE * delta
+			self.move_and_slide()
 
 func try_kill():
 	if alive:
 		alive = false
 		animationPlayer.play("dead2")
+		velocity = Vector3.BACK * KNOCKBACK_FORCE
 		return true
