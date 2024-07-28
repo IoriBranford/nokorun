@@ -42,7 +42,7 @@ script = ExtResource("1_ffboj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.125, 0)
 shape = SubResource("CapsuleShape3D_gdq8c")
 
-[node name="noko" parent="." instance=ExtResource("2_1qy1v")]
+[node name="Model" parent="." instance=ExtResource("2_1qy1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.125)
 
 [node name="Character" parent="." instance=ExtResource("2_nero3")]

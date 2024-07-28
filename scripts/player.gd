@@ -23,7 +23,7 @@ var coins = 0
 
 @onready var particles_trail = $ParticlesTrail
 @onready var sound_footsteps = $SoundFootsteps
-@onready var model = $Character
+@onready var model = $Model
 @onready var animation = $Character/AnimationPlayer
 
 # Functions
