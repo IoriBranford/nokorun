@@ -13,9 +13,17 @@ const KNOCKBACK_FORCE = 50.0
 func _ready():
 	animationPlayer.play("gun_idle")
 
+func update_sight():
+	if $RayCast3D.is_colliding():
+		var dist = $RayCast3D.global_position.distance_to($RayCast3D.get_collision_point())
+		$RayCast3D/LaserSight.scale.z = dist / $RayCast3D.scale.z
+	else:
+		$RayCast3D/LaserSight.scale.z = 1
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	if alive:
+		update_sight()
 		if player:
 			look_at(player.global_position, Vector3.UP, true)
 	else:
