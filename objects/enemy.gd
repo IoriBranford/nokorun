@@ -26,4 +26,5 @@ func try_kill():
 		alive = false
 		animationPlayer.play("dead2")
 		velocity = Vector3.BACK * KNOCKBACK_FORCE
+		$DeathCry.play()
 		return true

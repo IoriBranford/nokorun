@@ -33,6 +33,7 @@ func horn_body_entered(body):
 	if body is Enemy:
 		if body.try_kill():
 			enemy_killed.emit(body)
+			Audio.play("res://sounds/cut_sounds.tres")
 
 func connect_horns(rootHorn: MeshInstance3D):
 	var area: Area3D = rootHorn.get_node("Area3D")
