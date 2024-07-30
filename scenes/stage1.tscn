@@ -59,35 +59,45 @@ data = {
 
 [node name="Enemies" type="Node3D" parent="World"]
 
-[node name="enemy-pistol" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2.5, 0, 35.5)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol2" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol2" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 54.5)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol3" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol3" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4.5, 0, 72)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol4" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol4" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.5, 0, 72)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol5" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol5" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2.5, 0, 82)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol6" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol6" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.5, 0, 82)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol7" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol7" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1, 0, 90)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol8" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol8" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3, 0, 90)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol9" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol9" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 100)
+player = NodePath("../../../Player")
 
-[node name="enemy-pistol10" parent="World/Enemies" instance=ExtResource("3_pbkje")]
+[node name="enemy-pistol10" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 100)
+player = NodePath("../../../Player")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)

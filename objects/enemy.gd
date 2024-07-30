@@ -1,6 +1,8 @@
 class_name Enemy
 extends CharacterBody3D
 
+@export var player: Player
+
 @onready var animationPlayer = $model/AnimationPlayer
 
 var alive = true
