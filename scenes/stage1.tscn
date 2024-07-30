@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cda0kpiaelr3k"]
+[gd_scene load_steps=11 format=3 uid="uid://cda0kpiaelr3k"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_mkuuj"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_twbrf"]
 [ext_resource type="Script" path="res://scripts/view.gd" id="3_forxf"]
 [ext_resource type="PackedScene" uid="uid://dwt74xbm0empv" path="res://objects/enemy-pistol.tscn" id="3_pbkje"]
 [ext_resource type="MeshLibrary" uid="uid://byujrrcgyoo4w" path="res://models/nature-meshlib.tres" id="4_qxhvc"]
+[ext_resource type="AudioStream" uid="uid://drouyvy2r10ty" path="res://music/PEPSINOKO for TV game.ogg" id="9_tavd4"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="11_m1l17"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="12_wrh1s"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="13_n3ria"]
@@ -119,5 +120,9 @@ offset_right = 368.0
 offset_bottom = 123.0
 text = "0"
 label_settings = SubResource("LabelSettings_38ys3")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_tavd4")
+volume_db = -10.0
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
