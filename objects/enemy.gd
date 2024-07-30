@@ -20,12 +20,24 @@ func update_sight():
 	else:
 		$RayCast3D/LaserSight.scale.z = 1
 
+func fire():
+	animationPlayer.play("gun_shot")
+	var target = $RayCast3D.get_collider()
+	if target is Player:
+		pass # kill her
+	else: # if target is a horn
+		pass # break horn
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	if alive:
-		update_sight()
 		if player:
-			look_at(player.global_position, Vector3.UP, true)
+			var playerPos = player.global_position
+			look_at(playerPos, Vector3.UP, true)
+			var toPlayer = playerPos - global_position
+			if toPlayer.dot(player.velocity) >= 0 or toPlayer.length_squared() <= 1:
+				fire()
+		update_sight()
 	else:
 		if velocity.length_squared() >= 1:
 			velocity += Vector3.FORWARD * KNOCKBACK_FORCE * delta
