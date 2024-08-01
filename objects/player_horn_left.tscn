@@ -471,7 +471,7 @@ bind/145/bone = -1
 bind/145/pose = Transform3D(-0.630234, 0.776405, 0, 0, 0, -1, -0.776405, -0.630234, 0, -1.44864, -0.508707, 0.694232)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cgi3v"]
-height = 0.25
+height = 0.125
 radius = 0.125
 
 [node name="HornLeft" type="MeshInstance3D"]

@@ -14,11 +14,11 @@ radius = 0.25
 height = 2.5
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_cgi3v"]
-height = 0.375
+height = 0.25
 radius = 0.125
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ornpo"]
-height = 0.375
+height = 0.25
 radius = 0.125
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7stj"]
@@ -260,7 +260,7 @@ visible = false
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, -0.125, -2.25, 0)
 
 [node name="Area3D" type="Area3D" parent="Model/Rig/Skeleton3D/HornLeft" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.375, 2.25, -0.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3125, 2.25, -0.125)
 collision_layer = 32
 collision_mask = 192
 
@@ -304,7 +304,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, 0.125, -2.25, 0)
 
 [node name="Area3D" type="Area3D" parent="Model/Rig/Skeleton3D/HornRight" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.375, 2.25, -0.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3125, 2.25, -0.125)
 collision_layer = 32
 collision_mask = 192
 
