@@ -22,13 +22,33 @@ var jump_single = true
 var jump_double = true
 
 var coins = 0
+var leftHornLevel = 1
+var rightHornLevel = 1
 
 @onready var particles_trail = $ParticlesTrail
 @onready var sound_footsteps = $SoundFootsteps
-@onready var model = $Model
-@onready var animation = $Character/AnimationPlayer
+@onready var animation = $Model/AnimationPlayer
+@onready var leftHornModel = $"Model/Rig/Skeleton3D/Left Horn"
+@onready var rightHornModel = $"Model/Rig/Skeleton3D/Right Horn"
+@onready var leftHornHitbox = $Model/Rig/Skeleton3D/LeftHornAttachment/HornHitbox
+@onready var rightHornHitbox = $Model/Rig/Skeleton3D/RightHornAttachment/HornHitbox
+
+const HORN_HITBOX_BASE_HEIGHT = .75
+const HORN_HITBOX_GROW_HEIGHT = .25
 
 # Functions
+
+func set_horn_level(_model: MeshInstance3D, hitbox: Area3D, level: int):
+	var shape: CollisionShape3D = hitbox.get_node_or_null("CollisionShape3D")
+	if shape:
+		var cylinder = shape.shape
+		if cylinder is CylinderShape3D:
+			cylinder.height = HORN_HITBOX_BASE_HEIGHT + level*HORN_HITBOX_GROW_HEIGHT
+			hitbox.position.y = cylinder.height / 2
+	# for i in range(1, 8):
+	# 	var piece: MeshInstance3D = model.get_node_or_null(str(i))
+	# 	if piece:
+	# 		piece.visible = i <= level
 
 func horn_body_entered(body):
 	if body is Enemy:
@@ -36,17 +56,11 @@ func horn_body_entered(body):
 			enemy_killed.emit(body)
 			Audio.play("res://sounds/cut_sounds.tres")
 
-func connect_horns(rootHorn: MeshInstance3D):
-	var area: Area3D = rootHorn.get_node("Area3D")
-	area.connect("body_entered", horn_body_entered)
-	for i in range(2, 10):
-		var horn = rootHorn.get_node(str(i))
-		area = horn.get_node("Area3D")
-		area.connect("body_entered", horn_body_entered)
-
 func _ready():
-	connect_horns($Model/Rig/Skeleton3D/HornLeft)
-	connect_horns($Model/Rig/Skeleton3D/HornRight)
+	leftHornHitbox.connect("body_entered", horn_body_entered)
+	rightHornHitbox.connect("body_entered", horn_body_entered)
+	set_horn_level(leftHornModel, leftHornHitbox, leftHornLevel)
+	set_horn_level(rightHornModel, rightHornHitbox, rightHornLevel)
 
 func _physics_process(delta):
 	
@@ -100,13 +114,13 @@ func handle_effects():
 	
 	if is_on_floor():
 		if abs(velocity.x) > 1 or abs(velocity.z) > 1:
-			animation.play("walk", 0.5)
+			animation.play("Normal Running", 0.5)
 			particles_trail.emitting = true
 			sound_footsteps.stream_paused = false
 		else:
-			animation.play("idle", 0.5)
+			animation.play("Standing 2", 0.5)
 	else:
-		animation.play("jump", 0.5)
+		animation.play("Jumping Forward Still", 0.5)
 
 # Handle movement input
 
