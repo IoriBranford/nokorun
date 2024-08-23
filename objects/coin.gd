@@ -10,8 +10,6 @@ func _on_body_entered(body):
 		
 		body.collect_coin()
 		
-		Audio.play("res://sounds/coin.ogg") # Play sound
-		
 		$Mesh.queue_free() # Make invisible
 		$Particles.emitting = false # Stop emitting stars
 		

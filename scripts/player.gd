@@ -181,3 +181,5 @@ func collect_coin():
 	coins += 1
 	
 	coin_collected.emit(coins)
+
+	$SoundEat.play()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dl2ed4gkybggf"]
+[gd_scene load_steps=13 format=3 uid="uid://dl2ed4gkybggf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ffboj"]
 [ext_resource type="PackedScene" uid="uid://cbkrdpmlt2t8g" path="res://models/noko/noko.glb" id="2_1qy1v"]
@@ -8,6 +8,7 @@
 [ext_resource type="ArrayMesh" uid="uid://beevxpykbtru0" path="res://meshes/dust.tres" id="4_uv2bb"]
 [ext_resource type="PackedScene" uid="uid://doyrabt2ernhb" path="res://objects/player_horn_right.tscn" id="5_3y85v"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="5_ics1s"]
+[ext_resource type="AudioStream" uid="uid://bhd1vl2ygd4b0" path="res://sounds/eat_sounds.tres" id="9_njy65"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gdq8c"]
 radius = 0.25
@@ -301,5 +302,8 @@ stream = ExtResource("5_ics1s")
 volume_db = -5.0
 pitch_scale = 1.25
 autoplay = true
+
+[node name="SoundEat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_njy65")
 
 [editable path="Model"]
