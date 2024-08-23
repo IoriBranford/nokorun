@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cda0kpiaelr3k"]
+[gd_scene load_steps=12 format=3 uid="uid://cda0kpiaelr3k"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_mkuuj"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_twbrf"]
 [ext_resource type="Script" path="res://scripts/view.gd" id="3_forxf"]
 [ext_resource type="PackedScene" uid="uid://dwt74xbm0empv" path="res://objects/enemy-pistol.tscn" id="3_pbkje"]
 [ext_resource type="MeshLibrary" uid="uid://byujrrcgyoo4w" path="res://models/nature-meshlib.tres" id="4_qxhvc"]
+[ext_resource type="PackedScene" uid="uid://ddf2g512bxpg5" path="res://objects/shikasenbei.tscn" id="6_75mi3"]
 [ext_resource type="AudioStream" uid="uid://drouyvy2r10ty" path="res://music/PEPSINOKO for TV game.ogg" id="9_tavd4"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="11_m1l17"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="12_wrh1s"]
@@ -98,6 +99,68 @@ player = NodePath("../../../Player")
 [node name="enemy-pistol10" parent="World/Enemies" node_paths=PackedStringArray("player") instance=ExtResource("3_pbkje")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 100)
 player = NodePath("../../../Player")
+
+[node name="Items" type="Node3D" parent="World"]
+
+[node name="Shikasenbei" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 28)
+
+[node name="Shikasenbei2" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 32)
+
+[node name="Shikasenbei3" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 30)
+
+[node name="Shikasenbei4" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 34)
+
+[node name="Shikasenbei5" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 36)
+
+[node name="Shikasenbei6" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 18)
+
+[node name="Shikasenbei7" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 22)
+
+[node name="Shikasenbei8" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 20)
+
+[node name="Shikasenbei9" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 24)
+
+[node name="Shikasenbei10" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 26)
+
+[node name="Shikasenbei11" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 4, 0, 51.366)
+
+[node name="Shikasenbei12" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 6, 0, 54.8301)
+
+[node name="Shikasenbei13" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 5, 0, 53.0981)
+
+[node name="Shikasenbei14" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 5, 0, 56.5622)
+
+[node name="Shikasenbei15" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 4, 0, 58.2942)
+
+[node name="Shikasenbei16" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1, 0, 42.7058)
+
+[node name="Shikasenbei17" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 1, 0, 46.1699)
+
+[node name="Shikasenbei18" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, 0, 44.4378)
+
+[node name="Shikasenbei19" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 2, 0, 47.9019)
+
+[node name="Shikasenbei20" parent="World/Items" instance=ExtResource("6_75mi3")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 3, 0, 49.634)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
