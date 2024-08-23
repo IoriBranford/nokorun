@@ -28,20 +28,21 @@ collision_mask = 16
 script = ExtResource("1_tsefx")
 
 [node name="Mesh" parent="." instance=ExtResource("1_whnqt")]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0, 1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("SphereShape3D_3wnnc")
 
 [node name="Particles" type="CPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.447834, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 material_override = SubResource("StandardMaterial3D_cbcmg")
 mesh = SubResource("QuadMesh_mm4oc")
 direction = Vector3(1, 1, 1)
 spread = 180.0
 gravity = Vector3(0, 0, 0)
-initial_velocity_max = 1.0
+initial_velocity_min = 1.0
+initial_velocity_max = 1.5
 damping_min = 0.5
 damping_max = 0.5
 scale_amount_min = 0.15
