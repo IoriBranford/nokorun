@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://ddf2g512bxpg5"]
+
+[ext_resource type="Script" path="res://objects/coin.gd" id="1_tsefx"]
+[ext_resource type="PackedScene" uid="uid://ddsuxqjyeq3g4" path="res://models/food/shikasenbei.glb" id="1_whnqt"]
+[ext_resource type="Texture2D" uid="uid://bs6puxrivhkk2" path="res://sprites/particle.png" id="2_4314h"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3wnnc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbcmg"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_4314h")
+billboard_mode = 1
+billboard_keep_scale = true
+proximity_fade_enabled = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_mm4oc"]
+
+[sub_resource type="Curve" id="Curve_4o7nw"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.504298, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_k0kp1"]
+colors = PackedColorArray(0.996094, 0.910156, 0.351563, 1, 1, 1, 1, 1)
+
+[node name="Shikasenbei" type="Area3D"]
+collision_mask = 16
+script = ExtResource("1_tsefx")
+
+[node name="Mesh" parent="." instance=ExtResource("1_whnqt")]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("SphereShape3D_3wnnc")
+
+[node name="Particles" type="CPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.447834, 0)
+material_override = SubResource("StandardMaterial3D_cbcmg")
+mesh = SubResource("QuadMesh_mm4oc")
+direction = Vector3(1, 1, 1)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_max = 1.0
+damping_min = 0.5
+damping_max = 0.5
+scale_amount_min = 0.15
+scale_amount_max = 0.15
+scale_amount_curve = SubResource("Curve_4o7nw")
+color_ramp = SubResource("Gradient_k0kp1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
