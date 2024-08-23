@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bhd1vl2ygd4b0"]
+
+[ext_resource type="AudioStream" uid="uid://b3t07rvpkyvyb" path="res://sounds/eat1.ogg" id="1_a0p1n"]
+[ext_resource type="AudioStream" uid="uid://cc35xyie6psq0" path="res://sounds/eat2.ogg" id="2_6mbxg"]
+
+[resource]
+random_pitch = 1.25
+streams_count = 2
+stream_0/stream = ExtResource("1_a0p1n")
+stream_1/stream = ExtResource("2_6mbxg")
