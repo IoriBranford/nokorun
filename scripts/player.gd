@@ -28,27 +28,25 @@ var rightHornLevel = 1
 @onready var particles_trail = $ParticlesTrail
 @onready var sound_footsteps = $SoundFootsteps
 @onready var animation = $Model/AnimationPlayer
-@onready var leftHornModel = $"Model/Rig/Skeleton3D/Left Horn"
-@onready var rightHornModel = $"Model/Rig/Skeleton3D/Right Horn"
-@onready var leftHornHitbox = $Model/Rig/Skeleton3D/LeftHornAttachment/HornHitbox
-@onready var rightHornHitbox = $Model/Rig/Skeleton3D/RightHornAttachment/HornHitbox
+@onready var leftHorn = $Model/Rig/Skeleton3D/LeftHornAttachment
+@onready var rightHorn = $Model/Rig/Skeleton3D/RightHornAttachment
 
-const HORN_HITBOX_BASE_HEIGHT = .75
-const HORN_HITBOX_GROW_HEIGHT = .25
+const HORN_HITBOX_BASE_HEIGHT = 1
+const HORN_HITBOX_GROW_HEIGHT = .5
+const HORN_MODEL_BASE_SCALE = 3
+const HORN_MODEL_GROW_SCALE = 1.5
 
 # Functions
 
-func set_horn_level(_model: MeshInstance3D, hitbox: Area3D, level: int):
-	var shape: CollisionShape3D = hitbox.get_node_or_null("CollisionShape3D")
-	if shape:
-		var cylinder = shape.shape
-		if cylinder is CylinderShape3D:
-			cylinder.height = HORN_HITBOX_BASE_HEIGHT + level*HORN_HITBOX_GROW_HEIGHT
-			hitbox.position.y = cylinder.height / 2
-	# for i in range(1, 8):
-	# 	var piece: MeshInstance3D = model.get_node_or_null(str(i))
-	# 	if piece:
-	# 		piece.visible = i <= level
+func set_horn_level(horn: Node3D, level: int):
+	var model = horn.get_node("Model")
+	model.scale.x = HORN_MODEL_BASE_SCALE + level*HORN_MODEL_GROW_SCALE
+	var hitbox = horn.get_node("Hitbox")
+	var shape: CollisionShape3D = hitbox.get_node("CollisionShape3D")
+	var cylinder = shape.shape
+	if cylinder is CylinderShape3D:
+		cylinder.height = HORN_HITBOX_BASE_HEIGHT + level*HORN_HITBOX_GROW_HEIGHT
+		hitbox.position.y = cylinder.height / 2
 
 func horn_body_entered(body):
 	if body is Enemy:
@@ -57,10 +55,11 @@ func horn_body_entered(body):
 			Audio.play("res://sounds/cut_sounds.tres")
 
 func _ready():
-	leftHornHitbox.connect("body_entered", horn_body_entered)
-	rightHornHitbox.connect("body_entered", horn_body_entered)
-	set_horn_level(leftHornModel, leftHornHitbox, leftHornLevel)
-	set_horn_level(rightHornModel, rightHornHitbox, rightHornLevel)
+	for horn in [leftHorn, rightHorn]:
+		var hitbox = horn.get_node("Hitbox")
+		hitbox.connect("body_entered", horn_body_entered)
+	set_horn_level(leftHorn, leftHornLevel)
+	set_horn_level(rightHorn, rightHornLevel)
 
 func _physics_process(delta):
 	

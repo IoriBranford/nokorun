@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://pn7nqip0oyw7"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_1dpek"]
-height = 0.75
+height = 1.0
 radius = 0.125
 
 [node name="HornHitbox" type="Area3D"]
