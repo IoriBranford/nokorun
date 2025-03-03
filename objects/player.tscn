@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dl2ed4gkybggf"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_ffboj"]
+[ext_resource type="Script" uid="uid://dfkdq6aqq5x2y" path="res://scripts/player.gd" id="1_ffboj"]
 [ext_resource type="PackedScene" uid="uid://cbkrdpmlt2t8g" path="res://models/noko/noko.glb" id="2_1qy1v"]
 [ext_resource type="Texture2D" uid="uid://8ggihh27mlrr" path="res://sprites/blob_shadow.png" id="3_0c7wt"]
 [ext_resource type="PackedScene" uid="uid://c01mtxenga3uo" path="res://objects/player_horn_left.tscn" id="4_b7x4l"]

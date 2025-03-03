@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dwt74xbm0empv"]
 
-[ext_resource type="Script" path="res://objects/enemy.gd" id="1_6ofdg"]
+[ext_resource type="Script" uid="uid://clho63uurtsdb" path="res://objects/enemy.gd" id="1_6ofdg"]
 [ext_resource type="PackedScene" uid="uid://b27cw18rm2t1s" path="res://models/blake/blake.glb" id="2_mlayj"]
 [ext_resource type="AudioStream" uid="uid://dmkdwus0ob1jv" path="res://sounds/enemy_die_sounds.tres" id="3_yv45b"]
 

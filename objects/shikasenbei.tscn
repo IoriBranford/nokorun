@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ddf2g512bxpg5"]
 
-[ext_resource type="Script" path="res://objects/coin.gd" id="1_tsefx"]
+[ext_resource type="Script" uid="uid://bqoyg4i5yw0uh" path="res://objects/coin.gd" id="1_tsefx"]
 [ext_resource type="PackedScene" uid="uid://ddsuxqjyeq3g4" path="res://models/food/shikasenbei.glb" id="1_whnqt"]
 [ext_resource type="Texture2D" uid="uid://bs6puxrivhkk2" path="res://sprites/particle.png" id="2_4314h"]
 
